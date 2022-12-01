@@ -38,3 +38,30 @@ Dark gray (for text)   | #333333
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
 </body>
 ```
+
+## Firebase code
+```html
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCzB7wjIXw6n6M4d7OdPuGBb870LZ33MmM",
+    authDomain: "fitness-hut-81dd9.firebaseapp.com",
+    projectId: "fitness-hut-81dd9",
+    storageBucket: "fitness-hut-81dd9.appspot.com",
+    messagingSenderId: "640669419192",
+    appId: "1:640669419192:web:977c700ab966c4a6b8964d",
+    measurementId: "G-779DG0WW5J"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+```
