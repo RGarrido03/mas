@@ -30,6 +30,27 @@ Dark gray (for text)   | #333333
   <!-- External CDNs -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body, * {font-family: 'Open Sans', sans-serif;}
+    h1, h2, h3 {
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+    }
+    .primary-blue {color: #0066CC}
+    .secondary-blue {color: #0099FF}
+    /* White is already defined in Bootstrap 5 */
+    .off-white {color: #F8F8F8}
+    .main-gray {color: #555555}
+    .dark-gray {color: #333333} /* For text */
+    .middle-gray {color: #666666} /* For text */
+    .light-gray {color: #CCCCCC}
+  </style>
 </head>
 
 <body>
