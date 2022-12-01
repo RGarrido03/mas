@@ -1,0 +1,17 @@
+:root {
+    /* Blue */
+    --primary-blue: #0066CC;
+    --secondary-blue: #0099FF;
+    
+    /* White */
+    --white: white;
+    --off-white: #F8F8F8;
+    
+    /* Graphics gray */
+    --main-gray: #555555;
+    --light-gray: #CCCCCC;
+
+    /* Text gray */
+    --dark-gray: #333333;
+    --middle-gray: #666666;
+}
