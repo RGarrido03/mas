@@ -8,6 +8,17 @@ Project for "Modelação e Análise de Sistemas", 2022-2023.
 - [JQuery UI 1.13.2](https://jquery.com/)
 - [Knockout.js 3.5.1](https://knockoutjs.com/)
 
+## Color palette
+Color                  | Hex
+-----------------------|--------
+<span>Secondary blue         | #0099FF
+White                  | #FFFFFF
+Off white              | #F8F8F8
+Main gray              | #555555
+Light gray             | #CCCCCC
+Middle gray (for text) | #666666
+Dark gray (for text)   | #333333
+
 ## Common code between pages
 ```html
 <head>
