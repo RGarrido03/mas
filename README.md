@@ -11,7 +11,7 @@ Project for "Modelação e Análise de Sistemas", 2022-2023.
 ## Color palette
 Color                  | Hex
 -----------------------|--------
-<span>Secondary blue         | #0099FF
+Secondary blue         | #0099FF
 White                  | #FFFFFF
 Off white              | #F8F8F8
 Main gray              | #555555
@@ -24,9 +24,11 @@ Dark gray (for text)   | #333333
 <head>
   <title></title>
   <meta charset="utf-8">
+  
   <!-- Responsive design & PWA -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="application-name" content="Fitness Hut">
+
   <!-- External CDNs -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" />
