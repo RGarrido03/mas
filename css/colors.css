@@ -15,3 +15,20 @@
     --dark-gray: #333333;
     --middle-gray: #666666;
 }
+
+.primary-blue {color: var(--primary-blue)}
+.primary-blue-background {background-color: var(--primary-blue)}
+.secondary-blue {color: var(--secondary-blue)}
+.secondary-blue-background {background-color: var(--secondary-blue)}
+.white {color: var(--white)}
+.white-background {background-color: var(--white)}
+.off-white {color: var(--off-white)}
+.off-white-background off-white{background-color: var(--)}
+.main-gray {color: var(--main-gray)}
+.main-gray-background {background-color: var(--main-gray)}
+.light-gray {color: var(--light-gray)}
+.light-gray-background {background-color: var(--light-gray)}
+.dark-gray {color: var(--dark-gray)}
+.dark-gray-background {background-color: var(--dark-gray)}
+.middle-gray {color: var(--middle-gray)}
+.middle-gray-background {background-color: var(--middle-gray)}
