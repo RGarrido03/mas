@@ -1,5 +1,6 @@
 # MAS
-Project for "Modelação e Análise de Sistemas", 2022-2023.
+Project for "Modelação e Análise de Sistemas", 2022-2023.<br>
+Check the live page at https://RGarrido03.github.io/MAS (custom domain soon).
 
 ## Used frameworks
 - [Bootstrap 5.2.3](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
