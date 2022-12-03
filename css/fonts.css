@@ -5,11 +5,14 @@
     --lato: 'Lato', sans-serif;
 }
 
-body, * {
+body, *, .open-sans {
     font-family: var(--open-sans);
 }
 
-h1, h2, h3 {
+h1, h2, h3, .lato {
     font-family: var(--lato);
+}
+
+h1 {
     font-weight: bold;
 }
