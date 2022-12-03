@@ -1,4 +1,4 @@
-# MAS
+# New Fitness Hut app
 Project for "Modelação e Análise de Sistemas", 2022-2023.<br>
 Check the live page at https://RGarrido03.github.io/MAS (custom domain soon).
 
