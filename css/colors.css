@@ -32,3 +32,6 @@
 .dark-gray-background {background-color: var(--dark-gray)}
 .middle-gray {color: var(--middle-gray)}
 .middle-gray-background {background-color: var(--middle-gray)}
+
+body, *, p {color:var(--middle-gray)}
+h1, h2, h3 {color:var(--dark-gray)}
