@@ -20,7 +20,7 @@ function login(chosen) {
         alert('Please choose an actor');
         return;
     }
-    window.location.href = chosen + '/index.html';
+    window.location.href = chosen;
 }
 
 $('#clientButton').click(function() {
