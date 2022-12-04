@@ -20,27 +20,24 @@
 </head>
 
 <body>
+  <!-- Header -->
   <nav class="navbar primary-blue-background mb-3">
     <div class="container-fluid px-3">
       <a class="navbar-brand" href="..">
-        <svg xmlns="http://www.w3.org/2000/svg" style="height:2rem;" viewBox="0 0 139 139">
-          <path fill="white" d="M69.5 139C107.793 139 139 107.856 139 69.5C139 31.2066 107.856 0 69.5 0C31.1444 0 0 31.2066 0 69.5C0 107.856 31.2066 139 69.5 139ZM69.5 136.576C64.8998 136.576 60.4861 136.14 56.1346 135.208L56.8184 133.343L69.4378 100.955L81.9951 132.97L82.5546 134.462L82.8654 135.208C78.576 136.14 74.1002 136.576 69.5 136.576ZM69.5 2.42441C106.488 2.42441 136.576 32.5121 136.576 69.5C136.576 90.263 127.064 108.912 112.207 121.221L111.585 119.667L69.5 10.195L27.1038 120.413L26.7929 121.221C11.8734 108.912 2.36225 90.263 2.36225 69.5C2.42441 32.5121 32.5121 2.42441 69.5 2.42441Z" />
-        </svg>
+        <img style="height:2rem;" src="../img/vector.svg" alt="Fitness Hut logo"></svg>
       </a>
-      <div class="d-flex">
-        <div>
-          <i class="fa-regular fa-refresh fa-lg white me-3" id="refreshButton"></i>
-          <i class="fa-regular fa-user-circle fa-lg white" data-bs-toggle="modal" data-bs-target="#signinModal"></i>
-        </div>
-      </div>
+      <i class="fa-regular fa-user-circle fa-lg white" data-bs-toggle="modal" data-bs-target="#signinModal"></i>
     </div>
   </nav>
 
-  <div class="container-fluid px-3">
-    <div class="card">
-      <div class="card-body">
-        <h1 class="card-title">Client Placeholder</h1>
-        <p class="card-text">This is a placeholder for the client.</p>
+  <!-- Home -->
+  <div id="home">
+    <div class="container-fluid px-3">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">Client Placeholder</h1>
+          <p class="card-text">This is a placeholder for the client.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -55,38 +52,35 @@
         <div class="col"></div>
         <div class="col-auto"><i class="fa-lg fa-regular fa-message"></i></div>
         <div class="col"></div>
-        <div class="col-auto"><i class="fa-lg fa-regular fa-ruler"></i></div>
+        <div class="col-auto"><i class="fa-lg fa-regular fa-pot-food"></i></div>
         <div class="col"></div>
-        <div class="col-auto"><i class="fa-lg fa-regular fa-circle-ellipsis"></i></div>
+        <div class="col-auto"><i class="fa-lg fa-regular fa-ruler"></i></div>
       </div>
     </div>
   </nav>
   
-  <!-- Modal for signing-in -->
+  <!-- Profile modal -->
   <div class="modal fade" id="signinModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="signinModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="signinModalTitle">Olá!</h5>
+          <div class="modal-title">
+            <h5 id="signinModalTitle" class="m-0 fw-bold"><i class="fa-lg fa-solid fa-user-circle"></i>&nbsp;&nbsp;Rúben Garrido</h5>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action="/" method="post">
-          <div class="modal-body">
-            <div class="mb-3">
-              <label for="" class="form-label">Email</label>
-              <input type="email" class="form-control" name="emailInput" id="emailInput" placeholder="abc@mail.com">
-            </div>
-            <div>
-              <label for="" class="form-label">Password</label>
-              <input type="password" class="form-control" name="passwordInput" id="passwordInput">
-              <small id="forgotPassword" class="form-text"><a href="#" class="middle-gray">Esqueceu-se da sua palavra-passe?</a></small>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn light-gray-background">Registar</button>
-            <button type="sumbit" class="btn primary-blue-background white">Iniciar sessão</button>
-          </div>
-        </form>
+        <div class="modal-body">
+          <p><i class="fa-solid fa-credit-card"></i>&nbsp;&nbsp;Gerir subscrição</p>
+          <p><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;Definições</p>
+          <p><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Acerca da PWA</p>
+          <p class="mb-0" id="refreshButton"><i class="fa-solid fa-refresh"></i>&nbsp;&nbsp;Recarregar PWA</p>
+        </div>
+        <div class="modal-footer text-start">
+          <p class="text-danger me-auto">
+            <a href=".." class="text-danger text-decoration-none">
+              <i class="fa-solid fa-arrow-right-from-bracket text-danger"></i>&nbsp;&nbsp;Terminar sessão
+            </a>
+          </p>
       </div>
     </div>
   </div>
