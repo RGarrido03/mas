@@ -17,6 +17,23 @@
   <!-- CSS -->
   <link href="css/colors.css" rel="stylesheet" />
   <link href="css/fonts.css" rel="stylesheet" />
+
+  <style>
+    @keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  </style>
 </head>
 
 <body style="height:100%">
@@ -32,18 +49,20 @@
 
     <!-- Main text -->
     <div class="container-fluid px-3 text-center">
-      <h1>Bem-vindx</h1>
-      <h2 class="mb-5">à nova app Fitness Hut</h2>
+      <div class="title" style="animation: fadeAnimation 0.25s;">
+        <h1>Bem-vindx</h1>
+        <h2 class="mb-5">à nova app Fitness Hut</h2>
+      </div>
 
       <!-- Actor choosing -->
-      <div class="vstack gap-3 col-9 mx-auto" id="actor">
+      <div class="vstack gap-3 col-9 mx-auto" id="actor" style="animation: fadeAnimation 0.25s;">
         <p class="mb-0">Escolha uma das seguintes opções:</p>
         <button type="button" id="clientButton" class="btn primary-blue-background white">Cliente</button>
         <button type="button" id="ptButton" class="btn primary-blue-background white">Personal trainer</button>
       </div>
 
       <!-- Login form -->
-      <div class="vstack gap-3 col-9 mx-auto d-none" id="login">
+      <div class="vstack gap-3 col-9 mx-auto d-none" id="login" style="animation: fadeAnimation 0.25s;">
         <p class="mb-0" id="goBackButton"><i class="fa-solid fa-arrow-left dark-gray"></i>&nbsp;&nbsp;Voltar atrás</p>
         <div class="input-group">
           <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
