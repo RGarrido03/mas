@@ -33,11 +33,31 @@
     <!-- Main text -->
     <div class="container-fluid px-3 text-center">
       <h1>Bem-vindx</h1>
-      <h2>à nova app Fitness Hut</h2>
-      <p class="mt-5 mb-0">Escolha uma das seguintes opções:</p>
-      <div class="vstack gap-3 mt-3 col-9 mx-auto">
-        <a type="button" class="btn primary-blue-background white" href="client/index.html">Cliente</a>
-        <a type="button" class="btn primary-blue-background white" href="pt/index.html">Personal trainer</a>
+      <h2 class="mb-5">à nova app Fitness Hut</h2>
+
+      <!-- Actor choosing -->
+      <div class="vstack gap-3 col-9 mx-auto" id="actor">
+        <p class="mb-0">Escolha uma das seguintes opções:</p>
+        <button type="button" id="clientButton" class="btn primary-blue-background white">Cliente</button>
+        <button type="button" id="ptButton" class="btn primary-blue-background white">Personal trainer</button>
+      </div>
+
+      <!-- Login form -->
+      <div class="vstack gap-3 col-9 mx-auto d-none" id="login">
+        <p class="mb-0" id="goBackButton"><i class="fa-solid fa-arrow-left dark-gray"></i>&nbsp;&nbsp;Voltar atrás</p>
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-key"></i></span>
+          <input type="password" class="form-control" placeholder="Palavra-passe" aria-label="Palavra-passe" aria-describedby="basic-addon2">
+        </div>
+        <div class="hstack mx-auto">
+          <button type="button" id="loginButton" class="btn primary-blue-background white">Iniciar sessão</button>
+          <div class="col-auto gx-0">&nbsp;</div>
+          <button type="button" id="SignUpButton" class="btn border off-white-background">Registar</button>
+        </div>
       </div>
     </div>
 
@@ -71,6 +91,8 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="js/start-choose.js"></script>
 </body>
 
 </html>
