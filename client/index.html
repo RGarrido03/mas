@@ -26,7 +26,7 @@
       <a class="navbar-brand" href="..">
         <img style="height:2rem;" src="../img/vector.svg" alt="Fitness Hut logo"></svg>
       </a>
-      <i class="fa-regular fa-user-circle fa-lg white" data-bs-toggle="modal" data-bs-target="#signinModal"></i>
+      <img src="../img/profile-pic.jpeg" style="height:2em" class="border rounded-circle" data-bs-toggle="modal" data-bs-target="#profileModal">
     </div>
   </nav>
 
@@ -60,24 +60,24 @@
   </nav>
   
   <!-- Profile modal -->
-  <div class="modal fade" id="signinModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="signinModalTitle" aria-hidden="true">
+  <div class="modal fade" id="profileModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="profileModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <div class="modal-title">
-            <h5 id="signinModalTitle" class="m-0 fw-bold"><i class="fa-lg fa-solid fa-user-circle"></i>&nbsp;&nbsp;Rúben Garrido</h5>
+            <h5 id="profileModalTitle" class="m-0 fw-bold">Olá, Rúben!</h5>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <p><i class="fa-solid fa-credit-card"></i>&nbsp;&nbsp;Gerir subscrição</p>
           <p><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;Definições</p>
-          <p><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Acerca da PWA</p>
-          <p class="mb-0" id="refreshButton"><i class="fa-solid fa-refresh"></i>&nbsp;&nbsp;Recarregar PWA</p>
+          <p><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Acerca da app</p>
+          <p class="mb-0" id="refreshButton"><i class="fa-solid fa-refresh"></i>&nbsp;&nbsp;Recarregar app</p>
         </div>
         <div class="modal-footer text-start">
           <p class="text-danger me-auto">
-            <a href=".." class="text-danger text-decoration-none">
+            <a href=".." class="text-danger text-decoration-none fw-bold">
               <i class="fa-solid fa-arrow-right-from-bracket text-danger"></i>&nbsp;&nbsp;Terminar sessão
             </a>
           </p>
