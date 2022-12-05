@@ -23,18 +23,18 @@ function login(chosen) {
     window.location.href = chosen;
 }
 
-$('#clientButton').click(function() {
+$('#actor-clientButton').click(function() {
     goToLogin('client');
 });
 
-$('#ptButton').click(function() {
+$('#actor-ptButton').click(function() {
     goToLogin('pt');
 });
 
-$('#goBackButton').click(function() {
+$('#login-goBackButton').click(function() {
     backToActor();
 });
 
-$('#loginButton').click(function() {
+$('#login-loginButton').click(function() {
     login(chosen);
 });

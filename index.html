@@ -33,7 +33,8 @@
 
     <!-- Main text -->
     <div class="container-fluid px-3 text-center">
-      <div class="title" style="animation: fadeAnimation 0.25s;">
+      <!-- Title -->
+      <div class="" id="title" style="animation: fadeAnimation 0.25s;">
         <h1>Bem-vindx</h1>
         <h2 class="mb-5">à nova app Fitness Hut</h2>
       </div>
@@ -41,25 +42,54 @@
       <!-- Actor choosing -->
       <div class="vstack gap-3 col-9 mx-auto" id="actor" style="animation: fadeAnimation 0.25s;">
         <p class="mb-0">Escolha uma das seguintes opções:</p>
-        <button type="button" id="clientButton" class="btn primary-blue-background white">Cliente</button>
-        <button type="button" id="ptButton" class="btn primary-blue-background white">Personal trainer</button>
+        <button type="button" id="actor-clientButton" class="btn primary-blue-background white">Cliente</button>
+        <button type="button" id="actor-ptButton" class="btn primary-blue-background white">Personal trainer</button>
       </div>
 
       <!-- Login form -->
       <div class="vstack gap-3 col-9 mx-auto d-none" id="login" style="animation: fadeAnimation 0.25s;">
-        <p class="mb-0" id="goBackButton"><i class="fa-solid fa-arrow-left dark-gray"></i>&nbsp;&nbsp;Voltar atrás</p>
+        <p class="mb-0" id="login-goBackButton"><i class="fa-solid fa-arrow-left dark-gray"></i>&nbsp;&nbsp;Voltar atrás</p>
         <div class="input-group">
-          <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-          <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon1">
+          <span class="input-group-text" id="login-email"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="login-email">
         </div>
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-key"></i></span>
-          <input type="password" class="form-control" placeholder="Palavra-passe" aria-label="Palavra-passe" aria-describedby="basic-addon2">
+        <div>
+          <div class="input-group mb-1">
+            <span class="input-group-text" id="login-password"><i class="fa-solid fa-key"></i></span>
+            <input type="password" class="form-control" placeholder="Palavra-passe" aria-label="Palavra-passe" aria-describedby="login-password">
+          </div>
+          <div class="text-start">
+            <small id="login-forgotPassword" class="form-text"><a href="#" class="middle-gray">Esqueceu-se da sua palavra-passe?</a></small>
+          </div>
         </div>
         <div class="hstack mx-auto">
-          <button type="button" id="loginButton" class="btn primary-blue-background white">Iniciar sessão</button>
+          <button type="button" id="login-loginButton" class="btn primary-blue-background white">Iniciar sessão</button>
           <div class="col-auto gx-0">&nbsp;</div>
-          <button type="button" id="SignUpButton" class="btn border off-white-background">Registar</button>
+          <button type="button" id="login-signUpButton" class="btn border off-white-background">Registar</button>
+        </div>
+      </div>
+
+      <!-- Sign up -->
+      <div class="d-none" id="signUp">
+        <div id="signUp-Title" style="animation: fadeAnimation 0.25s;">
+          <h1>Registo</h1>
+          <h2 class="mb-5" id="signUp-subHeading">Passo 1/3</h2>
+        </div>
+        <div class="vstack gap-3 col-9 mx-auto" id="signUp-Step1" style="animation: fadeAnimation 0.25s;">
+          <p class="mb-0" id="signUp-goBackButton"><i class="fa-solid fa-arrow-left dark-gray"></i>&nbsp;&nbsp;Voltar atrás</p>
+          <div class="input-group">
+            <span class="input-group-text text-center" style="width:2.6em;" id="SignUp-Name"><i class="fa-solid fa-user"></i></span>
+            <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="SignUp-Name">
+          </div>
+          <div class="input-group">
+            <span class="input-group-text text-center" id="SignUp-Email"><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="SignUp-Email">
+          </div>
+          <div class="input-group">
+            <span class="input-group-text text-center" id="SignUp-Password"><i class="fa-solid fa-key"></i></span>
+            <input type="password" class="form-control" placeholder="Palavra-passe" aria-label="Palavra-passe" aria-describedby="SignUp-Password">
+          </div>
+          <button type="button" id="signUp-nextSection-1to2-Button" class="btn white primary-blue-background">Próximo passo</button>
         </div>
       </div>
     </div>
@@ -97,6 +127,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="js/start-choose.js"></script>
+  <script src="js/start-register.js"></script>
   <script src="js/refresh.js"></script>
 </body>
 
