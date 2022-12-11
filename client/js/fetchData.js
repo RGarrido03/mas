@@ -9,16 +9,12 @@ $(document).ready(function() {
 
   $.getJSON('json/ptsAvailable.json', function(data) {
     $("#messagesAssignedPT-name").html(data.assigned.name)
-    if (data.assigned.online == true) {
-        $("#messagesAssignedPT-online").html('<span class="text-success">&#8226;</span> Online agora')
-    }
-    else {
-        $("#messagesAssignedPT-online").html('<span class="text-danger">&#8226;</span> Offline')
-    }
+    var onlineStateHtml = (data.assigned.online==true) ? '<span class="text-success">&#8226;</span> Online agora' : '<span class="text-danger">&#8226;</span> Offline';
+    $("#messagesAssignedPT-online").html(onlineStateHtml)
     $("#messagesAssignedPT-photo").attr('src', data.assigned.photoPath)
 
     $.each(data.available, function(key, val) {
-        var onlineStateHtml = (val.online==true)?'<span class="text-success">&#8226;</span> Online agora':'<span class="text-danger">&#8226;</span> Offline';
+        var onlineStateHtml = (val.online==true) ? '<span class="text-success">&#8226;</span> Online agora' : '<span class="text-danger">&#8226;</span> Offline';
         $("#messagesAvailablePTs").html($("#messagesAvailablePTs").html() + '<div class="card off-white-background mb-3">'+
         '<div class="card-body">'+
           '<div class="row d-flex align-items-center">'+
