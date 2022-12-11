@@ -12,3 +12,17 @@
         opacity: 1;
     }
 }
+
+.circleStroke {
+    fill: none;
+    stroke: #198754;
+    stroke-width: 3;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+      stroke-dasharray: 0 222.2222;
+    }
+}
