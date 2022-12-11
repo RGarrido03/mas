@@ -127,13 +127,28 @@
   <!-- Messages -->
   <div id="messages" class="tab d-none" style="animation: fadeAnimation 0.25s;">
     <div class="container-fluid px-3">
-      <!-- Expect to be implemented today -->
+      <p class="fs-5 bold mb-2">Contacta o teu Personal Trainer</p>
       <div class="card off-white-background mb-3">
         <div class="card-body">
-          <h1 class="card-title">Messages placeholder</h1>
-          <p class="card-text">Some text here.</p>
+          <div class="row d-flex align-items-center">
+            <div class="col-auto">
+              <img style="height:3em" class="border border-primary-blue rounded-circle" id="messagesAssignedPT-photo">
+            </div>
+            <div class="col ps-0">
+              <p class="card-title bold mb-0" id="messagesAssignedPT-name"></p>
+              <p class="card-text" id="messagesAssignedPT-online"></p>
+            </div>
+            <div class="col-auto">
+              <div class="float-end">
+                <i class="fa-regular fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <p class="mt-4 fs-5 bold mb-2">Encontra um Personal Trainer para uma dúvida rápida</p>
+      <div id="messagesAvailablePTs"></div>
     </div>
   </div>
 

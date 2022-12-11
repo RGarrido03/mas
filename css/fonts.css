@@ -13,6 +13,6 @@ h1, h2, h3, .lato {
     font-family: var(--lato);
 }
 
-h1 {
+h1, .bold {
     font-weight: bold;
 }

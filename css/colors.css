@@ -34,4 +34,5 @@
 .middle-gray-background {background-color: var(--middle-gray)}
 
 body, *, p {color:var(--middle-gray)}
-h1, h2, h3 {color:var(--dark-gray)}
+h1, h2, h3, .bold {color:var(--dark-gray)}
+.border-primary-blue {border-color:var(--primary-blue) !important}

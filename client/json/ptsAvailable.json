@@ -1,7 +1,7 @@
 {
     "assigned": {
         "name": "Rui Pinheiro",
-        "online": true,
+        "online": false,
         "photoPath": "../../img/pt-male.png"
     },
     "available": [
