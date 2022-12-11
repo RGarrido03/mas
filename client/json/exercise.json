@@ -1,5 +1,5 @@
 {
-    "first": {
+    "1": {
         "done": true,
         "actual": false,
         "focus": "Peito, ombros e tríceps",
@@ -8,7 +8,7 @@
         "difficulty": "Médio",
         "isOnline": true
     },
-    "second": {
+    "2": {
         "done": true,
         "actual": false,
         "focus": "Pernas, glúteos e abdominais",
@@ -17,7 +17,7 @@
         "difficulty": "Difícil",
         "isOnline": false
     },
-    "third": {
+    "3": {
         "done": true,
         "actual": false,
         "focus": "Costas e bíceps",
@@ -26,7 +26,7 @@
         "difficulty": "Fácil",
         "isOnline": false
     },
-    "fourth": {
+    "4": {
         "done": false,
         "actual": true,
         "focus": "Treino HIIT",
@@ -35,7 +35,7 @@
         "difficulty": "Difícil",
         "isOnline": true
     },
-    "fifth": {
+    "5": {
         "done": false,
         "actual": false,
         "focus": "Abdominais",

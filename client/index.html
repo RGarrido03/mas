@@ -115,34 +115,40 @@
   <div id="exercise" class="tab d-none" style="animation: fadeAnimation 0.25s;">
     <div class="container-fluid px-3">
       <!-- Workout insight -->
-      <div class="card border-0 mb-3">
-        <div class="card-body ps-0">
-          <p class="card-title mb-0">Metade já está!</p>
-          <p class="card-text bold">Continua o bom trabalho.</p>
+      <div class="row">
+        <div class="col">
+          <div class="card border-0 mb-3">
+            <div class="card-body ps-0">
+              <p class="card-title mb-0" id="exercise-workoutInsight-content"></p>
+              <p class="card-text bold" id="exercise-workoutInsight-title"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <svg style="height:5em; width:5em" viewBox="0 0 80 80">
+            <g>
+              <g>
+                <circle cx="40" cy="40" r="36" fill="#F8F8F8" stroke="#CCCCCC" stroke-width="3" />
+                <path d="M40 4.6322
+                          a 35.3678 35.3678 0 0 1 0 70.7356
+                          a 35.3678 35.3678 0 0 1 0 -70.7356"
+                      fill="none"
+                      stroke="#198754";
+                      stroke-width="3";
+                      id="exercise-workoutInsight-SVGpath"
+                />
+              </g>
+              <text x="28" y="38" class="bold" id="exercise-workoutInsight-SVGtext"></text>
+              <text x="25" y="53">dias</text>
+            </g>
+          </svg>
         </div>
       </div>
 
       <!-- Plano semanal -->
       <div class="card off-white-background mb-3">
-        <div class="card-body">
-          <p class="card-text fs-5 bold">Plano semanal</p>
-          <p><span class="fw-semibold text-success">1º dia</span>&nbsp; Peito, ombros e tríceps</p>
-          <p><span class="fw-semibold text-success">2º dia</span>&nbsp; Pernas, glúteos e abdominais</p>
-          <p><span class="fw-semibold text-success">3º dia</span>&nbsp; Bíceps e costas</p>
-          <div class="row">
-            <div class="col">
-              <p class="dark-gray">
-                <span class="fw-semibold dark-gray">4º dia</span>&nbsp; Treino HIIT<br>
-                90 minutos | 710 kcal | Difícil
-              </p>
-            </div>
-            <div class="col-auto">
-              <div class="float-end">
-                <i class="fa-solid fa-play dark-gray"></i>
-              </div>
-            </div>
-          </div>
-          <p class="mb-0"><span class="fw-semibold">5º dia</span>&nbsp; Abdominais</p>
+        <div class="card-body" id="exercise-Plan">
+          <p class="card-text fs-5 bold mb-0">Plano semanal</p>
         </div>
       </div>
 
