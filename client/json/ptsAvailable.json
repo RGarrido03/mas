@@ -2,23 +2,23 @@
     "assigned": {
         "name": "Rui Pinheiro",
         "online": false,
-        "photoPath": "../img/pt-male.png"
+        "photoPath": "https://rgarrido03.github.io/MAS/img/pt-male.png"
     },
     "available": [
         {
             "name": "Carolina Patrocínio",
             "online": true,
-            "photoPath":"../img/pt-female.png"
+            "photoPath":"https://rgarrido03.github.io/MAS/img/pt-female.png"
         },
         {
             "name": "Raquel Antunes",
             "online": true,
-            "photoPath": "../img/pt-female.png"
+            "photoPath": "https://rgarrido03.github.io/MAS/img/pt-female.png"
         },
         {
             "name": "Francisco Macau",
             "online": true,
-            "photoPath": "../img/pt-male.png"
+            "photoPath": "https://rgarrido03.github.io/MAS/img/pt-male.png"
         }
     ]
 }
