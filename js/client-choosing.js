@@ -28,12 +28,15 @@ function changeFontAwesomeStyle(active_id) {
     }
 )}
 
-$('#homeButton').click(function() {
-    hideOtherTabs('home');
-    changeFontAwesomeStyle('home');
-});
+var switchingTabsContent = ['home', 'exercise', 'messages', 'nutrition', 'measures'];
 
-$('#exerciseButton').click(function() {
-    hideOtherTabs('exercise');
-    changeFontAwesomeStyle('exercise');
+$.each(switchingTabsContent, function(index_1, content) {
+    $.each(['Button','HomeInsight'], function(index_2, type) {
+        if ($('#' + content + type)) {
+            $('#' + content + type).click(function() {
+                hideOtherTabs(content);
+                changeFontAwesomeStyle(content);
+            })
+        }
+    })
 });

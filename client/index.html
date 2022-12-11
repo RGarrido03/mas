@@ -34,8 +34,8 @@
   <!-- Home -->
   <div id="home" class="tab" style="animation: fadeAnimation 0.25s;">
     <div class="container-fluid px-3">
-      <!-- Workout insight -->
-      <div class="card off-white-background mb-3">
+      <!-- Exercise insight -->
+      <div class="card off-white-background mb-3" id="exerciseHomeInsight">
         <div class="card-body row d-flex align-items-center">
           <div class="col-auto">
             <h1 class="card-title">Bom dia, Rúben!</h1>
@@ -49,8 +49,8 @@
         </div>
       </div>
 
-      <!-- Message insight -->
-      <div class="card off-white-background mb-3">
+      <!-- Messages insight -->
+      <div class="card off-white-background mb-3" id="messagesHomeInsight">
         <div class="card-body row d-flex align-items-center">
           <div class="col-auto">
             <p class="card-title mb-1">Precisas de ajuda?</p>
@@ -65,7 +65,7 @@
       </div>
 
       <!-- Nutrition insight -->
-      <div class="card off-white-background mb-3">
+      <div class="card off-white-background mb-3" id="nutritionHomeInsight">
         <div class="card-body row d-flex align-items-center">
           <div class="col-auto">
             <p class="card-title mb-1">Almoço (850kcal, 50g proteína)</p>
@@ -80,7 +80,7 @@
       </div>
 
       <!-- Body measures insight -->
-      <div class="card off-white-background mb-3">
+      <div class="card off-white-background mb-3" id="measuresHomeInsight">
         <div class="card-body row d-flex align-items-center">
           <div class="col-auto">
             <p class="card-title mb-1">Massa muscular: <span class="fw-semibold dark-gray">2,5kg</span> em 2 semanas</p>
@@ -116,16 +116,48 @@
     <div class="container-fluid px-3">
       <!-- Workout insight -->
       <div class="card off-white-background mb-3">
-        <div class="card-body row d-flex align-items-center">
-          <div class="col-auto">
-            <h1 class="card-title">Exercise placeholder</h1>
-            <p class="card-text">Hoje é dia de treino HIIT. Vamos lá?</p>
-          </div>
-          <div class="col">
-            <div class="float-end">
-              <i class="fa-solid fa-dumbbell dark-gray"></i>
-            </div>
-          </div>
+        <div class="card-body">
+          <h1 class="card-title">Exercise placeholder</h1>
+          <p class="card-text">Some text here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Messages -->
+  <div id="messages" class="tab d-none" style="animation: fadeAnimation 0.25s;">
+    <div class="container-fluid px-3">
+      <!-- Expect to be implemented today -->
+      <div class="card off-white-background mb-3">
+        <div class="card-body">
+          <h1 class="card-title">Messages placeholder</h1>
+          <p class="card-text">Some text here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nutrition -->
+  <div id="nutrition" class="tab d-none" style="animation: fadeAnimation 0.25s;">
+    <div class="container-fluid px-3">
+      <!-- Work in progress. This is just a placeholder -->
+      <div class="card off-white-background mb-3">
+        <div class="card-body">
+          <h1 class="card-title">Nutrition placeholder</h1>
+          <p class="card-text">Work in progress.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Body measures -->
+  <div id="measures" class="tab d-none" style="animation: fadeAnimation 0.25s;">
+    <div class="container-fluid px-3">
+      <!-- Work in progress. This is just a placeholder -->
+      <div class="card off-white-background mb-3">
+        <div class="card-body">
+          <h1 class="card-title">Body measures placeholder</h1>
+          <p class="card-text">Work in progress.</p>
         </div>
       </div>
     </div>
@@ -139,11 +171,11 @@
         <div class="col"></div>
         <div class="col-auto p-0"><i class="fa-lg fa-regular fa-dumbbell tabIcon" id="exerciseButton"></i></div>
         <div class="col"></div>
-        <div class="col-auto p-0"><i class="fa-lg fa-regular fa-message tabIcon" id="messageButton"></i></div>
+        <div class="col-auto p-0"><i class="fa-lg fa-regular fa-message tabIcon" id="messagesButton"></i></div>
         <div class="col"></div>
         <div class="col-auto p-0"><i class="fa-lg fa-regular fa-pot-food tabIcon" id="nutritionButton"></i></div>
         <div class="col"></div>
-        <div class="col-auto p-0 pe-3"><i class="fa-lg fa-regular fa-ruler tabIcon" id="measureButton"></i></div>
+        <div class="col-auto p-0 pe-3"><i class="fa-lg fa-regular fa-ruler tabIcon" id="measuresButton"></i></div>
       </div>
     </div>
   </footer>
