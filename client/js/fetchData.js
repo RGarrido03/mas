@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $.each(data.available, function(key, val) {
         var onlineStateHtml = (val.online==true) ? '<span class="text-success">&#8226;</span> Online agora' : '<span class="text-danger">&#8226;</span> Offline';
-        $("#messagesAvailablePTs").html($("#messagesAvailablePTs").html() + '<div class="card off-white-background mb-3">'+
+        $("#messagesAvailablePTs").html($("#messagesAvailablePTs").html() + '<div class="card off-white-background mb-3 clickable">'+
         '<div class="card-body">'+
           '<div class="row d-flex align-items-center">'+
             '<div class="col-auto">'+
@@ -58,7 +58,7 @@ $(document).ready(function() {
                   '</div>'+
                   '<div class="col-auto">'+
                     '<div class="float-end">'+
-                      '<i class="fa-solid fa-' + locationIcon + ' dark-gray mt-3 mb-0"></i>'+
+                      '<i class="fa-solid fa-' + locationIcon + ' dark-gray mt-3 mb-0 clickable"></i>'+
                     '</div>'+
                   '</div>'+
                 '</div>')

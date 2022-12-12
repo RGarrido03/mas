@@ -18,6 +18,7 @@
   <link href="../css/colors.css" rel="stylesheet" />
   <link href="../css/fonts.css" rel="stylesheet" />
   <link href="../css/animation.css" rel="stylesheet" />
+  <link href="../css/misc.css" rel="stylesheet" />
 </head>
 
 <body style="animation: fadeAnimation 0.25s;">
@@ -27,7 +28,7 @@
       <a class="navbar-brand" href="..">
         <img style="height:2rem;" src="../img/vector.svg" alt="Fitness Hut logo"></svg>
       </a>
-      <img src="../img/profile-pic.jpeg" style="height:2em" class="border rounded-circle" data-bs-toggle="modal" data-bs-target="#profileModal">
+      <img src="../img/profile-pic.jpeg" style="height:2em" class="border rounded-circle clickable" data-bs-toggle="modal" data-bs-target="#profileModal">
     </div>
   </nav>
 
@@ -35,7 +36,7 @@
   <div id="home" class="tab" style="animation: fadeAnimation 0.25s;">
     <div class="container-fluid px-3">
       <!-- Exercise insight -->
-      <div class="card off-white-background mb-3" id="exerciseHomeInsight">
+      <div class="card off-white-background mb-3 clickable" id="exerciseHomeInsight">
         <div class="card-body row d-flex align-items-center">
           <div class="col">
             <h1 class="card-title">Bom dia, Rúben!</h1>
@@ -50,7 +51,7 @@
       </div>
 
       <!-- Messages insight -->
-      <div class="card off-white-background mb-3" id="messagesHomeInsight">
+      <div class="card off-white-background mb-3 clickable" id="messagesHomeInsight">
         <div class="card-body row d-flex align-items-center">
           <div class="col">
             <p class="card-title mb-1">Precisas de ajuda?</p>
@@ -65,7 +66,7 @@
       </div>
 
       <!-- Nutrition insight -->
-      <div class="card off-white-background mb-3" id="nutritionHomeInsight">
+      <div class="card off-white-background mb-3 clickable" id="nutritionHomeInsight">
         <div class="card-body row d-flex align-items-center">
           <div class="col">
             <p class="card-title mb-1">Almoço (320kcal, 30g proteína)</p>
@@ -80,7 +81,7 @@
       </div>
 
       <!-- Body measures insight -->
-      <div class="card off-white-background mb-3" id="measuresHomeInsight">
+      <div class="card off-white-background mb-3 clickable" id="measuresHomeInsight">
         <div class="card-body row d-flex align-items-center">
           <div class="col">
             <p class="card-title mb-1">Massa muscular: <span class="fw-semibold dark-gray">2,5kg</span> em 2 semanas</p>
@@ -95,7 +96,7 @@
       </div>
 
       <!-- Subscription insight -->
-      <div class="card off-white-background">
+      <div class="card off-white-background clickable">
         <div class="card-body row d-flex align-items-center">
           <div class="col">
             <p class="card-title mb-1">A tua subscrição (24,99€)</p>
@@ -151,7 +152,7 @@
       </div>
 
       <!-- Assistir aulas -->
-      <div class="card off-white-background mb-3">
+      <div class="card off-white-background mb-3 clickable">
         <div class="card-body row d-flex align-items-center">
           <div class="col">
             <p class="card-text"><span class="bold">Assistir aulas</span> individuais online</p>
@@ -165,7 +166,7 @@
       </div>
 
       <!-- Agendar aula -->
-      <div class="card off-white-background mb-3">
+      <div class="card off-white-background mb-3 clickable">
         <div class="card-body row d-flex align-items-center">
           <div class="col">
             <p class="card-text"><span class="bold">Agendar aula</span> presencial</p>
@@ -179,7 +180,7 @@
       </div>
 
       <!-- Sugerir alterações -->
-      <div class="card off-white-background">
+      <div class="card off-white-background clickable">
         <div class="card-body row d-flex align-items-center">
           <div class="col">
             <p class="card-text"><span class="bold">Sugerir alterações</span> ao plano atual</p>
@@ -198,7 +199,7 @@
   <div id="messages" class="tab d-none" style="animation: fadeAnimation 0.25s;">
     <div class="container-fluid px-3">
       <p class="fs-5 bold mb-2">Contacta o teu Personal Trainer</p>
-      <div class="card off-white-background mb-3">
+      <div class="card off-white-background mb-3 clickable">
         <div class="card-body">
           <div class="row d-flex align-items-center">
             <div class="col-auto">
@@ -252,15 +253,15 @@
   <footer class="py-3 border-top off-white-background fixed-bottom">
     <div class="container-fluid px-4">
       <div class="row">
-        <div class="col-auto p-0 ps-3"><i class="fa-lg fa-solid fa-home dark-gray tabIcon" id="homeButton"></i></div>
+        <div class="col-auto p-0 ps-3"><i class="fa-lg fa-solid fa-home dark-gray tabIcon clickable" id="homeButton"></i></div>
         <div class="col"></div>
-        <div class="col-auto p-0"><i class="fa-lg fa-regular fa-dumbbell tabIcon" id="exerciseButton"></i></div>
+        <div class="col-auto p-0"><i class="fa-lg fa-regular fa-dumbbell tabIcon clickable" id="exerciseButton"></i></div>
         <div class="col"></div>
-        <div class="col-auto p-0"><i class="fa-lg fa-regular fa-message tabIcon" id="messagesButton"></i></div>
+        <div class="col-auto p-0"><i class="fa-lg fa-regular fa-message tabIcon clickable" id="messagesButton"></i></div>
         <div class="col"></div>
-        <div class="col-auto p-0"><i class="fa-lg fa-regular fa-pot-food tabIcon" id="nutritionButton"></i></div>
+        <div class="col-auto p-0"><i class="fa-lg fa-regular fa-pot-food tabIcon clickable" id="nutritionButton"></i></div>
         <div class="col"></div>
-        <div class="col-auto p-0 pe-3"><i class="fa-lg fa-regular fa-ruler tabIcon" id="measuresButton"></i></div>
+        <div class="col-auto p-0 pe-3"><i class="fa-lg fa-regular fa-ruler tabIcon clickable" id="measuresButton"></i></div>
       </div>
     </div>
   </footer>
@@ -276,10 +277,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p><i class="fa-solid fa-credit-card"></i>&nbsp;&nbsp;Gerir subscrição</p>
-          <p><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;Definições</p>
-          <p><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Acerca da app</p>
-          <p class="mb-0" id="refreshButton"><i class="fa-solid fa-refresh"></i>&nbsp;&nbsp;Recarregar app</p>
+          <p><i class="fa-solid fa-credit-card clickable"></i>&nbsp;&nbsp;Gerir subscrição</p>
+          <p><i class="fa-solid fa-gear clickable"></i>&nbsp;&nbsp;Definições</p>
+          <p><i class="fa-solid fa-circle-info clickable"></i>&nbsp;&nbsp;Acerca da app</p>
+          <p class="mb-0 clickable" id="refreshButton"><i class="fa-solid fa-refresh"></i>&nbsp;&nbsp;Recarregar app</p>
         </div>
         <div class="modal-footer text-start">
           <p class="text-danger me-auto">
