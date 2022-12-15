@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --open-sans: 'Open Sans', sans-serif;
+    --lato: 'Lato', sans-serif;
+}
+
+body, *, .open-sans {
+    font-family: var(--open-sans);
+}
+
+h1, h2, h3, .lato {
+    font-family: var(--lato);
+}
+
+h1, .bold {
+    font-weight: bold;
+}
