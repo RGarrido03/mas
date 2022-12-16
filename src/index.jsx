@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Navbar from './navbar/navbarClientHome';
+import Navbar from './navbar/navbarLogin';
+import Footer from './footer/footerLogin';
 import reportWebVitals from './reportWebVitals';
 
 // Bootstrap CSS
@@ -20,6 +21,7 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <App />
+    <Footer />
   </React.StrictMode>
 );
 
