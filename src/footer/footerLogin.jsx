@@ -14,7 +14,7 @@ function FooterLogin() {
         <p className="float-start mb-0">P3 - Grupo 4</p>
         <div className="float-end">
           <a className="me-3" href="https://github.com/RGarrido03/MAS"><i className="fa-lg fa-brands fa-github"></i></a>
-          <span class="clickable" onClick={()=> handleShow()}><i className="fa-lg fa-regular fa-circle-question"></i></span>
+          <span className="clickable" onClick={()=> handleShow()}><i className="fa-lg fa-regular fa-circle-question"></i></span>
         </div>
       </Container>
     </div>
