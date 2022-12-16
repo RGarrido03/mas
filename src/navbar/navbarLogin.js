@@ -1,6 +1,6 @@
 import { Container, Navbar } from 'react-bootstrap';
 
-function navbar() {
+function NavbarLogin() {
   const svgStyle = {height: "2rem", fill: "white"};
   return (
     <Navbar className="primary-blue-background">
@@ -13,4 +13,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default NavbarLogin;
