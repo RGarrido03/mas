@@ -9,7 +9,7 @@ const ModalLogin = (props) => {
     <div>
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header>
-          <Modal.Title className='fw-bold'>Ajuda & FAQs</Modal.Title>
+          <Modal.Title className='bold'>Ajuda & FAQs</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p className="mb-0">Funcionalidade em desenvolvimento.</p>

@@ -12,11 +12,11 @@ const ModalGeneric = (props) => {
           {(() => {
             if (actor === "client") {
               return (
-                <Modal.Title className='fw-bold'>Olá, Jorge!</Modal.Title>
+                <Modal.Title className='bold'>Olá, Jorge!</Modal.Title>
               )
             } else if (actor === "pt") {
               return (
-                <Modal.Title className='fw-bold'>Olá, Rui!</Modal.Title>
+                <Modal.Title className='bold'>Olá, Rui!</Modal.Title>
               )
             }
           })()}
