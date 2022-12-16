@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Navbar from './navbar/navbarClient';
+import Navbar from './navbar/navbarClientHome';
 import reportWebVitals from './reportWebVitals';
 
 // Bootstrap CSS

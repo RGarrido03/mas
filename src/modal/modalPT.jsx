@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 
 
-const ModalClient = (props) => {
+const ModalPT = (props) => {
     const { show, handleClose } = props
 
 
@@ -10,10 +10,9 @@ const ModalClient = (props) => {
         <div>
             <Modal show={show} onHide={handleClose} centered>
                 <Modal.Header closeButton>
-                    <Modal.Title className='fw-bold'>Olá, Jorge!</Modal.Title>
+                    <Modal.Title className='fw-bold'>Olá, Rui!</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p className="clickable"><i className="fa-solid fa-credit-card"></i>&nbsp;&nbsp;Gerir subscrição</p>
                     <p className="clickable"><i className="fa-solid fa-gear"></i>&nbsp;&nbsp;Definições</p>
                     <p className="clickable mb-0"><i className="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Acerca da app</p>
                 </Modal.Body>
@@ -29,4 +28,4 @@ const ModalClient = (props) => {
 }
 
 
-export default ModalClient;
+export default ModalPT;
