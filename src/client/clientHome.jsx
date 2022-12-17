@@ -69,12 +69,12 @@ function clientHome() {
                     <Card className="off-white-background mb-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
-                                <Card.Title><span className="bold">Músculo: +2,5kg</span> em 14 dias</Card.Title>
+                                <Card.Title className='bold'>Massa muscular</Card.Title>
                                 <Card.Text><img src={chart} alt="Gráfico om a evolução da massa muscular" /></Card.Text>
                             </Col>
                             <Col xs="auto">
                                 <div className="float-end">
-                                    <i className="fa-solid fa-pot-food dark-gray"></i>
+                                    <i className="fa-solid fa-ruler dark-gray"></i>
                                 </div>
                             </Col>
                         </Card.Body>
