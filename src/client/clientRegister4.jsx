@@ -2,10 +2,16 @@ import Navbar from '../navbar/navbarLogin';
 import Footer from '../footer/footerLogin';
 import { Container, InputGroup, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function ClientRegister4() {
     return (
         <div style={{ height: 'calc(100vh - 58.64px)', paddingTop: '58.64px'}} className="d-flex align-items-center">
+            <HelmetProvider>
+                <Helmet>
+                    <title>Registo (4/4)</title>
+                </Helmet>
+            </HelmetProvider>
             <Navbar />
             <Container fluid className='px-3 text-center'>
                 <div>

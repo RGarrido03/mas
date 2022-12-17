@@ -2,11 +2,17 @@ import Navbar from '../navbar/navbarHome';
 import Footer from '../footer/footerClient';
 import { Container, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import chart from '../img/chart.svg';
 
 function clientHome() {
     return (
         <div style={{ minHeight: 'calc(100vh - 58px - 57px)', paddingTop: '58px', paddingBottom:'57px' }}>
+            <HelmetProvider>
+                <Helmet>
+                    <title>Início</title>
+                </Helmet>
+            </HelmetProvider>
             <Navbar actor="client" text="Início"/>
             <Container fluid className="mt-3">
                 {/* Exercise insight */}
