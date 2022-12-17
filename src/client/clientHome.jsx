@@ -6,8 +6,8 @@ import chart from '../img/chart.svg';
 
 function clientHome() {
     return (
-        <div style={{ minHeight: 'calc(100vh - 58.64px - 57px)', paddingTop: '58.64px', paddingBottom:'57px' }}>
-            <Navbar actor="client" />
+        <div style={{ minHeight: 'calc(100vh - 58px - 57px)', paddingTop: '58px', paddingBottom:'57px' }}>
+            <Navbar actor="client" text="Início"/>
             <Container fluid className="mt-3">
                 {/* Exercise insight */}
                 <Link to="/client/exercise" className='text-decoration-none'>
