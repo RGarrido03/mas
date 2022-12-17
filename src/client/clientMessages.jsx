@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import PTMale from '../img/pt-male.png';
 import PTFemale from '../img/pt-female.png';
+import Data from '../api/client/ptsAvailable.json';
 
 function clientMessages() {
     return (
@@ -17,8 +18,8 @@ function clientMessages() {
             <Navbar actor="client" text="Mensagens" />
             <Container fluid>
                 {/* Own PT */}
-                <p className="fs-5 bold mb-2 mt-3">Contacta o teu Personal Trainer</p>
-                <Card className="off-white-background">
+                <p className="fs-5 bold mb-0 mt-3">Contacta o teu Personal Trainer</p>
+                <Card className="off-white-background mt-3">
                     <Card.Body>
                         <Row className="d-flex align-items-center">
                             <Col xs="auto">
@@ -26,8 +27,8 @@ function clientMessages() {
                             </Col>
                             <Col className="ps-0">
                                 <Card.Text>
-                                    <span className='bold mb-0'>Rui Pinheiro</span><br />
-                                    <i className="fa-solid fa-2xs fa-circle-small text-danger"></i> Offline
+                                    <span className='bold mb-0'>{Data.assigned.name}</span><br />
+                                    {Data.assigned.online ? (<span><i className="fa-solid fa-2xs fa-circle-small text-success"></i> Online agora</span>) : <span><i className="fa-solid fa-2xs fa-circle-small text-danger"></i> Offline</span>}
                                 </Card.Text>
                             </Col>
                             <Col xs="auto">
@@ -38,63 +39,28 @@ function clientMessages() {
                 </Card>
 
                 {/* Other PTs */}
-                <p className="fs-5 bold mb-2 mt-4">Encontra um Personal Trainer</p>
-                <Card className="off-white-background">
-                    <Card.Body>
-                        <Row className="d-flex align-items-center">
-                            <Col xs="auto">
-                                <img src={PTFemale} style={{ height: '3rem' }} alt="Fotografia de perfil do Personal Trainer" className='border border-primary-blue rounded-circle' />
-                            </Col>
-                            <Col className="ps-0">
-                                <Card.Text>
-                                    <span className='bold mb-0'>Carolina Patrocínio</span><br />
-                                    <i className="fa-solid fa-2xs fa-circle-small text-success"></i> Online agora
-                                </Card.Text>
-                            </Col>
-                            <Col xs="auto">
-                                <i className="fa-regular fa-chevron-right"></i>
-                            </Col>
-                        </Row>
-                    </Card.Body>
-                </Card>
+                <p className="fs-5 bold mb-0 mt-4">Encontra um Personal Trainer</p>
+                {Data["available"].map((value) => {
+                    return <Card className="off-white-background mt-3" key={value.name}>
+                        <Card.Body>
+                            <Row className="d-flex align-items-center">
+                                <Col xs="auto">
+                                    <img src={PTFemale} style={{ height: '3rem' }} alt="Fotografia de perfil do Personal Trainer" className='border border-primary-blue rounded-circle' />
+                                </Col>
+                                <Col className="ps-0">
+                                    <Card.Text>
+                                        <span className='bold mb-0'>{value.name}</span><br />
+                                        {value.online ? (<span><i className="fa-solid fa-2xs fa-circle-small text-success"></i> Online agora</span>) : <span><i className="fa-solid fa-2xs fa-circle-small text-danger"></i> Offline</span>}
+                                    </Card.Text>
+                                </Col>
+                                <Col xs="auto">
+                                    <i className="fa-regular fa-chevron-right"></i>
+                                </Col>
+                            </Row>
+                        </Card.Body>
+                    </Card>
 
-                <Card className="off-white-background mt-3">
-                    <Card.Body>
-                        <Row className="d-flex align-items-center">
-                            <Col xs="auto">
-                                <img src={PTFemale} style={{ height: '3rem' }} alt="Fotografia de perfil do Personal Trainer" className='border border-primary-blue rounded-circle' />
-                            </Col>
-                            <Col className="ps-0">
-                                <Card.Text>
-                                    <span className='bold mb-0'>Raquel Antunes</span><br />
-                                    <i className="fa-solid fa-2xs fa-circle-small text-success"></i> Online agora
-                                </Card.Text>
-                            </Col>
-                            <Col xs="auto">
-                                <i className="fa-regular fa-chevron-right"></i>
-                            </Col>
-                        </Row>
-                    </Card.Body>
-                </Card>
-
-                <Card className="off-white-background mt-3">
-                    <Card.Body>
-                        <Row className="d-flex align-items-center">
-                            <Col xs="auto">
-                                <img src={PTMale} style={{ height: '3rem' }} alt="Fotografia de perfil do Personal Trainer" className='border border-primary-blue rounded-circle' />
-                            </Col>
-                            <Col className="ps-0">
-                                <Card.Text>
-                                    <span className='bold mb-0'>Francisco Macau</span><br />
-                                    <i className="fa-solid fa-2xs fa-circle-small text-success"></i> Online agora
-                                </Card.Text>
-                            </Col>
-                            <Col xs="auto">
-                                <i className="fa-regular fa-chevron-right"></i>
-                            </Col>
-                        </Row>
-                    </Card.Body>
-                </Card>
+                })}
             </Container>
             <Footer active="messages" />
         </div>
