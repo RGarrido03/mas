@@ -35,7 +35,7 @@ root.render(
         <meta name="theme-color" content="#0066CC" />
       </Helmet>
     </HelmetProvider>
-    <Router>
+    <Router basename='/mas'>
       <Routes>
         <Route path="/" element={<ActorChoosing />} />
         <Route path="/client/home" element={<ClientHome />} />
