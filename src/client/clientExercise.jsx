@@ -67,7 +67,7 @@ function ClientExercise() {
                     <Card className="off-white-background mt-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
-                                <Card.Text><span className="semibold">Participar em aulas</span> extra</Card.Text>
+                                <Card.Text><Link to="/client/exercise/extraclasses" className="text-decoration-none middle-gray"><span className="semibold">Participar em aulas</span> extra</Link></Card.Text>
                             </Col>
                             <Col xs="auto">
                                 <i className="fa-regular fa-chevron-right"></i>

@@ -1,0 +1,42 @@
+[
+    {
+        "time": "16:00",
+        "duration": 45,
+        "focus": "Treino HIIT",
+        "calories": 370,
+        "difficulty": "Difícil",
+        "pt": "Rui Pinheiro"
+    },
+    {
+        "time": "16:30",
+        "duration": 30,
+        "focus": "Pernas, glúteos e abdominais",
+        "calories": 250,
+        "difficulty": "Médio",
+        "pt": "Raquel Antunes"
+    },
+    {
+        "time": "17:00",
+        "duration": 45,
+        "focus": "Abdominais",
+        "calories": 200,
+        "difficulty": "Médio",
+        "pt": "Francisco Macau"
+    },
+    {
+        "time": "19:00",
+        "duration": 30,
+        "focus": "Peito, ombros e tríceps",
+        "calories": 250,
+        "difficulty": "Médio",
+        "pt": "Rui Pinheiro"
+    },
+    {
+        "time": "20:30",
+        "duration": 30,
+        "focus": "Bíceps e costas",
+        "calories": 250,
+        "difficulty": "Médio",
+        "pt": "Carolina Patrocínio"
+    }
+]

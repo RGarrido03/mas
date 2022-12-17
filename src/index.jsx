@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ActorChoosing from './actorChoosing';
 import ClientHome from './client/clientHome';
 import ClientExercise from './client/clientExercise';
+import ClientExerciseClasses from './client/clientExerciseClasses';
 import ClientMessages from './client/clientMessages';
 import ClientLogin from './client/clientLogin';
 import ClientRegister1 from './client/clientRegister1';
@@ -40,6 +41,7 @@ root.render(
         <Route path="/" element={<ActorChoosing />} />
         <Route path="/client/home" element={<ClientHome />} />
         <Route path="/client/exercise" element={<ClientExercise />} />
+        <Route path="/client/exercise/extraclasses" element={<ClientExerciseClasses />} />
         <Route path="/client/messages" element={<ClientMessages />} />
         <Route path="/client/login" element={<ClientLogin />} />
         <Route path="/client/register/1" element={<ClientRegister1 />} />
