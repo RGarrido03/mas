@@ -3,8 +3,9 @@ import Footer from '../footer/footerClient';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import Data from '../api/client/exercise.json';
 
-function clientExercise() {
+function ClientExercise() {
     return (
         <div style={{ minHeight: 'calc(100vh - 58px - 57px)', paddingTop: '58px', paddingBottom: '57px' }}>
             <HelmetProvider>
@@ -24,12 +25,12 @@ function clientExercise() {
                                     <p className='mb-0 bold'>Continua o bom trabalho.</p>
                                 </Col>
                                 <Col xs="auto">
-                                    <svg style={{height:"5em", width:"5em"}} viewBox="0 0 80 80">
+                                    <svg style={{ height: "5em", width: "5em" }} viewBox="0 0 80 80">
                                         <g>
                                             <g>
                                                 <circle cx="40" cy="40" r="36" fill="#F8F8F8" stroke="#CCCCCC" strokeWidth="3" />
                                                 <path d="M40 4.6322 a 35.3678 35.3678 0 0 1 0 70.7356 a 35.3678 35.3678 0 0 1 0 -70.7356"
-                                                    className="circleStroke" style={{strokeDasharray: "133.3333px 222.2222px"}}
+                                                    className="circleStroke" style={{ strokeDasharray: "133.3333px 222.2222px" }}
                                                 />
                                             </g>
                                             <text x="28" y="38" className="bold">3/5</text>
@@ -47,18 +48,16 @@ function clientExercise() {
                     <Card.Body>
                         <Card.Title className='bold'>Plano semanal</Card.Title>
                         <Card.Text as="div">
-                            <p className='mt-3 mb-0'><span className="fw-semibold text-success">1º dia</span>&nbsp; Peito, ombros e tríceps</p>
-                            <p className='mt-3 mb-0'><span className="fw-semibold text-success">2º dia</span>&nbsp; Pernas, glúteos e abdominais</p>
-                            <p className='mt-3 mb-0'><span className="fw-semibold text-success">3º dia</span>&nbsp; Costas e bíceps</p>
+                            {Data["done"].map((value, index) => {return <p className='mt-3 mb-0'><span className="fw-semibold text-success">{index+1}º dia</span>&nbsp; {value.focus}</p>})}
                             <Row>
                                 <Col>
-                                    <p className='mt-3 mb-0'><span className="fw-semibold dark-gray">4º dia</span>&nbsp; Treino HIIT<br />90 minutos | 710kcal | Difícil</p>
+                                    <p className='mt-3 mb-0'><span className="fw-semibold dark-gray">{Data["done"].length + 1}º dia</span>&nbsp; {Data["actual"].focus}<br />{Data["actual"].duration} minutos | {Data["actual"].calories}kcal | {Data["actual"].difficulty}</p>
                                 </Col>
                                 <Col xs="auto">
-                                    <Link to="/client/exercise/videocall"><i className='fa-solid fa-play dark-gray mt-3 mb-0'></i></Link>
+                                    <Link to="/client/exercise/videocall"><i className={((Data["actual"].isOnline) ? 'fa-play' : 'fa-building') + ' fa-solid dark-gray mt-3 mb-0'}></i></Link>
                                 </Col>
                             </Row>
-                            <p className='mt-3 mb-0'><span className="fw-semibold">5º dia</span>&nbsp; Abdominais</p>
+                            {Data["next"].map((value, index) => {return <p className='mt-3 mb-0'><span className="fw-semibold text-success">{index + 2 + Data["done"].length}º dia</span>&nbsp; {value.focus}</p>})}
                         </Card.Text>
                     </Card.Body>
                 </Card>
@@ -96,4 +95,4 @@ function clientExercise() {
     )
 }
 
-export default clientExercise;
+export default ClientExercise;

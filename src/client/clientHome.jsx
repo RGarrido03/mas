@@ -4,6 +4,7 @@ import { Container, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import chart from '../img/chart.svg';
+import ExerciseData from '../api/client/exercise.json';
 
 function clientHome() {
     return (
@@ -24,7 +25,7 @@ function clientHome() {
                                     <h1>Bom dia, Jorge!</h1>
                                 </Card.Title>
                                 <Card.Text>
-                                    Hoje é dia de HIIT. Vamos lá?
+                                    Hoje é dia de {ExerciseData["actual"].focus}. Vamos lá?
                                 </Card.Text>
                             </Col>
                             <Col xs="auto">
