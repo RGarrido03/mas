@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ActorChoosing from './actorChoosing';
 import ClientHome from './client/clientHome';
+import ClientExercise from './client/clientExercise';
 import ClientLogin from './client/clientLogin';
 import ClientRegister1 from './client/clientRegister1';
 import ClientRegister2 from './client/clientRegister2';
@@ -30,6 +31,7 @@ root.render(
       <Routes>
         <Route path="/" element={<ActorChoosing />} />
         <Route path="/client/home" element={<ClientHome />} />
+        <Route path="/client/exercise" element={<ClientExercise />} />
         <Route path="/client/login" element={<ClientLogin />} />
         <Route path="/client/register/1" element={<ClientRegister1 />} />
         <Route path="/client/register/2" element={<ClientRegister2 />} />
