@@ -14,7 +14,7 @@ function NavbarHome(props) {
   const handleShow = () => setShow(true);
 
   return (
-    <Navbar className="primary-blue-background">
+    <Navbar className="fixed-top primary-blue-background">
       <ModalGeneric actor={props.actor} show={show} handleClose={handleClose} handleShow={handleShow}/>
       <Container fluid className="px-3">
         <Navbar.Brand href="/" className="m-0">
