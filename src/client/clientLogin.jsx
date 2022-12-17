@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function ClientLogin() {
     let url = "";
     return (
-        <div style={{ height: '100vh' }} className="d-flex align-items-center">
+        <div style={{ height: 'calc(100vh - 58.64px)', paddingTop: '58.64px' }} className="d-flex align-items-center">
             <Navbar />
             <Container fluid className='px-3 text-center'>
                 <div>
