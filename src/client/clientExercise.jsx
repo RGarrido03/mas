@@ -48,16 +48,16 @@ function ClientExercise() {
                     <Card.Body>
                         <Card.Title className='bold'>Plano semanal</Card.Title>
                         <Card.Text as="div">
-                            {Data["done"].map((value, index) => {return <p className='mt-3 mb-0'><span className="fw-semibold text-success">{index+1}º dia</span>&nbsp; {value.focus}</p>})}
+                            {Data["done"].map((value, index) => {return <p key={index} className='mt-3 mb-0'><span className="fw-semibold text-success">{index+1}º dia</span>&nbsp; {value.focus}</p>})}
                             <Row>
                                 <Col>
-                                    <p className='mt-3 mb-0'><span className="fw-semibold dark-gray">{Data["done"].length + 1}º dia</span>&nbsp; {Data["actual"].focus}<br />{Data["actual"].duration} minutos | {Data["actual"].calories}kcal | {Data["actual"].difficulty}</p>
+                                    <p key={1 + Data["done"].length} className='mt-3 mb-0'><span className="fw-semibold dark-gray">{Data["done"].length + 1}º dia</span>&nbsp; {Data["actual"].focus}<br />{Data["actual"].duration} minutos | {Data["actual"].calories}kcal | {Data["actual"].difficulty}</p>
                                 </Col>
                                 <Col xs="auto">
                                     <Link to="/client/exercise/videocall"><i className={((Data["actual"].isOnline) ? 'fa-play' : 'fa-building') + ' fa-solid dark-gray mt-3 mb-0'}></i></Link>
                                 </Col>
                             </Row>
-                            {Data["next"].map((value, index) => {return <p className='mt-3 mb-0'><span className="fw-semibold text-success">{index + 2 + Data["done"].length}º dia</span>&nbsp; {value.focus}</p>})}
+                            {Data["next"].map((value, index) => {return <p key={index + 2 + Data["done"].length} className='mt-3 mb-0'><span className="fw-semibold">{index + 2 + Data["done"].length}º dia</span>&nbsp; {value.focus}</p>})}
                         </Card.Text>
                     </Card.Body>
                 </Card>
