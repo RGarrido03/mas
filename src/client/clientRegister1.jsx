@@ -16,7 +16,7 @@ function ClientRegister1() {
                     <Link to="/client/login" className='text-decoration-none middle-gray'><i className="fa-solid fa-arrow-left dark-gray"></i>&nbsp;&nbsp;Voltar atrás</Link>
                     <InputGroup>
                         <span className="input-group-text"><i className="fa-solid fa-user"></i></span>
-                        <input type="email" className="form-control" placeholder="Nome" aria-label="Nome" />
+                        <input type="text" className="form-control" placeholder="Nome" aria-label="Nome" />
                     </InputGroup>
                     <InputGroup>
                         <span className="input-group-text"><i className="fa-solid fa-envelope"></i></span>
