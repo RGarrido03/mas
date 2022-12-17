@@ -5,6 +5,7 @@ import ActorChoosing from './actorChoosing';
 import ClientHome from './client/clientHome';
 import ClientExercise from './client/clientExercise';
 import ClientExerciseClasses from './client/clientExerciseClasses';
+import ClientExercisePlan from './client/clientExerciseChangePlan';
 import ClientMessages from './client/clientMessages';
 import ClientLogin from './client/clientLogin';
 import ClientRegister1 from './client/clientRegister1';
@@ -42,6 +43,7 @@ root.render(
         <Route path="/client/home" element={<ClientHome />} />
         <Route path="/client/exercise" element={<ClientExercise />} />
         <Route path="/client/exercise/extraclasses" element={<ClientExerciseClasses />} />
+        <Route path="/client/exercise/changeplan" element={<ClientExercisePlan />} />
         <Route path="/client/messages" element={<ClientMessages />} />
         <Route path="/client/login" element={<ClientLogin />} />
         <Route path="/client/register/1" element={<ClientRegister1 />} />
