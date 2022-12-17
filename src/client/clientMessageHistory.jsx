@@ -25,9 +25,9 @@ function clientMessageHistory() {
                                     <Row className='d-flex align-items-end'>
                                         <Col></Col>
                                         <Col xs="auto" className="pe-0 m-0 fs-7 text-end">
-                                            {value_b.time.slice(0, 5)}<br />
-                                            {value_b.isRead && <span className="semibold">Lida</span>}
-                                            {!value_b.isRead && <span>Entregue</span>}
+                                            {value_b.isRead && <span className="semibold">Lida<br /></span>}
+                                            {!value_b.isRead && <span>Entregue<br /></span>}
+                                            {value_b.time.slice(0, 5)}
                                         </Col>
                                         <Col xs="auto" className="pe-0">
                                             <p className="p-2 primary-blue-background rounded white mb-0">{value_b["text"]}</p>
