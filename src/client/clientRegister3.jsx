@@ -17,27 +17,27 @@ function ClientRegister3() {
                     <Stack direction='vertical' gap={3}>
                         <Card className='w-100 off-white-background border'>
                             <Card.Body className='text-start'>
-                                <div className='card-text align-middle'>
+                                <Card.Text as="div" className='align-middle'>
                                     <Row>
                                         <Col><i className='fa-brands fa-apple-pay fa-2xl' style={{ color: 'black' }}></i></Col>
                                         <Col xs="auto"><i className='fa-regular fa-circle-dot dark-gray'></i></Col>
                                     </Row>
-                                </div>
+                                </Card.Text>
                             </Card.Body>
                         </Card>
                         <Card className='w-100 off-white-background border'>
                             <Card.Body className='text-start'>
-                                <div className='card-text align-middle'>
+                                <Card.Text as="div" className='align-middle'>
                                     <Row>
                                         <Col><i className='fa-solid fa-credit-card dark-gray'></i>&nbsp;&nbsp;Cartão de débito ou crédito</Col>
                                         <Col xs="auto"><i className='fa-regular fa-circle'></i></Col>
                                     </Row>
-                                </div>
+                                </Card.Text>
                             </Card.Body>
                         </Card>
                         <Card className='w-100 off-white-background border'>
                             <Card.Body className='text-start'>
-                                <div className='card-text align-middle'>
+                                <Card.Text as="div" className='align-middle'>
                                     <Row>
                                         <Col className='d-flex align-items-center'>
                                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@ function ClientRegister3() {
                                             &nbsp;&nbsp;MB WAY</Col>
                                         <Col xs="auto"><i className='fa-regular fa-circle'></i></Col>
                                     </Row>
-                                </div>
+                                </Card.Text>
                             </Card.Body>
                         </Card>
                         <Card className='w-100 off-white-background border'>
