@@ -1,5 +1,5 @@
 import { Row, Col, Button } from 'react-bootstrap';
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 
 function NotFound() {
@@ -9,10 +9,12 @@ function NotFound() {
     const navigate = useNavigate();
     return (
         <div className='text-center'>
-            <Helmet>
-                <title>404 - Não encontrado</title>
-                <meta name="theme-color" content="#FFFFFF" />
-            </Helmet>
+            <HelmetProvider>
+                <Helmet>
+                    <title>404 - Não encontrado</title>
+                    <meta name="theme-color" content="#FFFFFF" />
+                </Helmet>
+            </HelmetProvider>
             <Row className='align-items-center w-100 m-0' style={{ height: '100vh' }}>
                 <Col>
                     <svg style={svgStyle} className="mb-5" xmlns="http://www.w3.org/2000/svg" width="139" height="139" viewBox="0 0 139 139">
