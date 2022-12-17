@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# New Fitness Hut app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project for "Modelação e Análise de Sistemas", 2022-2023.<br>
+Check the live page at https://rgarrido03.github.io/mas.
 
 ## Available Scripts
 
