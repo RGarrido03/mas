@@ -8,7 +8,7 @@ function ClientExerciseChangePlan() {
         <div style={{ minHeight: 'calc(100vh - 58px)', paddingTop: '58px' }}>
             <HelmetProvider>
                 <Helmet>
-                    <title>Aulas extra</title>
+                    <title>Sugerir alterações ao plano</title>
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Sugerir alterações ao plano" />
