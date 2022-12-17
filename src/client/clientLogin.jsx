@@ -25,7 +25,7 @@ function ClientLogin() {
                             <input type="password" className="form-control" placeholder="Palavra-passe" aria-label="Palavra-passe" aria-describedby="login-password" />
                         </InputGroup>
                         <div className="text-start">
-                            <small className="form-text"><a href={url} className="middle-gray">Esqueceu-se da sua palavra-passe?</a></small>
+                            <small className="form-text"><a href={url} className="middle-gray">Esqueceste-te da tua palavra-passe?</a></small>
                         </div>
                     </div>
                     <div className="hstack mx-auto">
@@ -35,7 +35,7 @@ function ClientLogin() {
                     </div>
                 </div>
             </Container>
-            <Footer actor="client" />
+            <Footer />
         </div>
     );
 }

@@ -68,7 +68,7 @@ function ClientRegister3() {
                     </div>
                 </div>
             </Container>
-            <Footer actor="client" />
+            <Footer />
         </div>
     );
 }
