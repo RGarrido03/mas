@@ -64,7 +64,7 @@ function ClientRegister3() {
                         </Card>
                     </Stack>
                     <div className="mx-auto">
-                        <Link to="/client/home" type="button" className="btn primary-blue-background white">Concluir registo</Link>
+                        <Link to="/client/register/4" type="button" className="btn primary-blue-background white">Próximo passo</Link>
                     </div>
                 </div>
             </Container>

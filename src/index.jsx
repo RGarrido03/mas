@@ -6,6 +6,7 @@ import ClientLogin from './client/clientLogin';
 import ClientRegister1 from './client/clientRegister1';
 import ClientRegister2 from './client/clientRegister2';
 import ClientRegister3 from './client/clientRegister3';
+import ClientRegister4 from './client/clientRegister4';
 import NotFound from './notFound';
 
 // Bootstrap CSS
@@ -29,6 +30,7 @@ root.render(
         <Route path="/client/register/1" element={<ClientRegister1 />} />
         <Route path="/client/register/2" element={<ClientRegister2 />} />
         <Route path="/client/register/3" element={<ClientRegister3 />} />
+        <Route path="/client/register/4" element={<ClientRegister4 />} />
         <Route path="*" element={<NotFound />}/>
       </Routes>
     </Router>
