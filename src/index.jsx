@@ -7,6 +7,7 @@ import ClientExercise from './client/clientExercise';
 import ClientExerciseClasses from './client/clientExerciseClasses';
 import ClientExercisePlan from './client/clientExerciseChangePlan';
 import ClientMessages from './client/clientMessages';
+import ClientMessageHistory from './client/clientMessageHistory';
 import ClientLogin from './client/clientLogin';
 import ClientRegister1 from './client/clientRegister1';
 import ClientRegister2 from './client/clientRegister2';
@@ -45,6 +46,7 @@ root.render(
         <Route path="/client/exercise/extraclasses" element={<ClientExerciseClasses />} />
         <Route path="/client/exercise/changeplan" element={<ClientExercisePlan />} />
         <Route path="/client/messages" element={<ClientMessages />} />
+        <Route path="/client/messages/history" element={<ClientMessageHistory />} />
         <Route path="/client/login" element={<ClientLogin />} />
         <Route path="/client/register/1" element={<ClientRegister1 />} />
         <Route path="/client/register/2" element={<ClientRegister2 />} />
