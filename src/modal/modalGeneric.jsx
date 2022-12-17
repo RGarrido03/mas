@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { Link } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 const ModalGeneric = (props) => {
@@ -23,6 +24,11 @@ const ModalGeneric = (props) => {
           })()}
         </Modal.Header>
         <Modal.Body>
+          <HelmetProvider>
+            <Helmet>
+              <meta name="theme-color" content="#003366" />
+            </Helmet>
+          </HelmetProvider>
           {(actor === "client") ?
             (<p className="clickable"><i className="fa-solid fa-credit-card"></i>&nbsp;&nbsp;Gerir subscrição</p>) :
             (<p className="clickable"><i className="fa-solid fa-user"></i>&nbsp;&nbsp;Gerir inscrição na Fitness Hut</p>)
