@@ -1,15 +1,12 @@
 import Navbar from '../navbar/navbarBackMessage';
 import Footer from '../footer/footerMessage';
-import { Container, Card, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import PTMale from '../img/pt-male.png';
 import Client from '../img/client.jpeg';
 import Data from '../api/client/messageHistory.json';
-import { Fragment } from 'react';
 
 function clientMessageHistory() {
-    var date = new Date(1970, 1, 1);
     return (
         <div style={{ minHeight: 'calc(100vh - 58px - 75px)', paddingTop: '58px', paddingBottom: '75px' }}>
             <HelmetProvider>
