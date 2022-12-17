@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-router-dom';
 
 
 const ModalGeneric = (props) => {
@@ -30,10 +31,10 @@ const ModalGeneric = (props) => {
           <p className="clickable mb-0"><i className="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Acerca da app</p>
         </Modal.Body>
         <Modal.Footer>
-          <a href="#home" alt="Logout" className='me-auto text-danger text-decoration-none clickable fw-bold'>
+          <Link to="/" className='me-auto text-danger text-decoration-none clickable fw-bold'>
             <i className='fa-solid fa-arrow-right-from-bracket text-danger'></i>
             &nbsp;Terminar sessão
-          </a>
+          </Link>
         </Modal.Footer>
       </Modal>
     </div>
