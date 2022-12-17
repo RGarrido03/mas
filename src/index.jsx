@@ -12,6 +12,7 @@ import ClientRegister4 from './client/clientRegister4';
 import PTLogin from './pt/PTLogin';
 import PTRegister from './pt/PTRegister';
 import NotFound from './notFound';
+import { Helmet } from 'react-helmet';
 
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -27,6 +28,10 @@ import './css/misc.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Helmet>
+      <title>Fitness Hut</title>
+      <meta name="theme-color" content="#0066CC" />
+    </Helmet>
     <Router>
       <Routes>
         <Route path="/" element={<ActorChoosing />} />
@@ -39,7 +44,7 @@ root.render(
         <Route path="/client/register/4" element={<ClientRegister4 />} />
         <Route path="/pt/login" element={<PTLogin />} />
         <Route path="/pt/register" element={<PTRegister />} />
-        <Route path="*" element={<NotFound />}/>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   </React.StrictMode>
