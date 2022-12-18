@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Carolina Patrocínio",
+        "lastMessage": "Lorem ipsum dolor sit amet",
+        "isOpen": false,
+        "photoPath": "https://rgarrido03.github.io/MAS/img/pt-female.png"
+    },
+    {
+        "name": "Raquel Antunes",
+        "lastMessage": "Lorem ipsum dolor sit amet",
+        "isOpen": false,
+        "photoPath": "https://rgarrido03.github.io/MAS/img/pt-female.png"
+    },
+    {
+        "name": "Francisco Macau",
+        "lastMessage": "Lorem ipsum dolor sit amet",
+        "isOpen": true,
+        "photoPath": "https://rgarrido03.github.io/MAS/img/pt-male.png"
+    }
+]

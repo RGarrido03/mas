@@ -22,7 +22,7 @@ function FooterClient(props) {
           </Col>
           <Col></Col>
 
-          <Col xs="auto" className="p-0">
+          <Col xs="auto" className="p-0 pe-3">
           <Link to="/pt/messages"><i className={((props.active === "messages") ? "fa-solid dark-gray" : "fa-regular") + " fa-lg fa-message"}></i></Link>
           </Col>
         </Row>
