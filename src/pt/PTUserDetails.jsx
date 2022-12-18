@@ -16,7 +16,7 @@ function PTUserDetails() {
             <Navbar actor="pt" />
             <Container fluid className="mt-3">
                 {/* Exercise insight */}
-                <Link to="/pt/users/details/exercise" className='text-decoration-none'>
+                <Link to="/pt/users/details/changeplan" className='text-decoration-none'>
                     <Card className="off-white-background mt-3">
                         <Card.Body>
                             <Row>

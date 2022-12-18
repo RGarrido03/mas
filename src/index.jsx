@@ -27,6 +27,7 @@ import PTMessageVideocall from './pt/PTMessageVideocall';
 import PTRegister from './pt/PTRegister';
 import PTUsers from './pt/PTUsers';
 import PTUserDetails from './pt/PTUserDetails';
+import PTUserDetailsChangePlan from './pt/PTUserDetailsChangePlan';
 import NotFound from './notFound';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 
@@ -78,6 +79,7 @@ root.render(
         <Route path="/pt/register" element={<PTRegister />} />
         <Route path="/pt/users" element={<PTUsers />} />
         <Route path="/pt/users/details" element={<PTUserDetails />} />
+        <Route path="/pt/users/details/changeplan" element={<PTUserDetailsChangePlan />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
