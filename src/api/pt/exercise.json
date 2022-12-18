@@ -1,0 +1,42 @@
+{
+    "done": [
+        {
+            "time": "07:00",
+            "focus": "Peito, ombros e tríceps",
+            "duration": 45,
+            "isOnline": false
+        },
+        {
+            "time": "08:00",
+            "focus": "Pernas, glúteos e abdominais",
+            "duration": 55,
+            "isOnline": false
+        },
+        {
+            "time": "09:00",
+            "focus": "Costas e bíceps",
+            "duration": 35,
+            "isOnline": false
+        }
+    ],
+    "actual": {
+        "time": "10:00",
+        "focus": "Treino HIIT",
+        "duration": 90,
+        "isOnline": false
+    },
+    "next": [
+        {
+            "time": "14:00",
+            "focus": "Abdominais",
+            "duration": 45,
+            "isOnline": true
+        },
+        {
+            "time": "15:00",
+            "focus": "Peito e ombros",
+            "duration": 45,
+            "isOnline": true
+        }
+    ]
+}

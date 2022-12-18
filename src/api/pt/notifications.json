@@ -1,0 +1,14 @@
+[
+    {
+        "from": "Jorge Guerreiro",
+        "icon": "fa-video",
+        "text": "Pedido de videochamada",
+        "link": "/pt/messages/videocall"
+    },
+    {
+        "from": "Maria Teixeira",
+        "icon": "fa-ruler",
+        "text": "Novas medidas corporais",
+        "link": "/pt/user/detail/measures"
+    }
+]
