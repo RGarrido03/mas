@@ -19,6 +19,7 @@ import ClientRegister4 from './client/clientRegister4';
 import PTHome from './pt/PTHome';
 import PTLogin from './pt/PTLogin';
 import PTMessages from './pt/PTMessages';
+import PTMessageHistory from './pt/PTMessageHistory';
 import PTRegister from './pt/PTRegister';
 import NotFound from './notFound';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
@@ -62,6 +63,7 @@ root.render(
         <Route path="/client/register/4" element={<ClientRegister4 />} />
         <Route path="/pt/home" element={<PTHome />} />
         <Route path="/pt/messages" element={<PTMessages />} />
+        <Route path="/pt/messages/history" element={<PTMessageHistory />} />
         <Route path="/pt/login" element={<PTLogin />} />
         <Route path="/pt/register" element={<PTRegister />} />
         <Route path="*" element={<NotFound />} />

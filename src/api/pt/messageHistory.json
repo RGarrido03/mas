@@ -1,0 +1,69 @@
+[
+    {
+        "sender": "client",
+        "content": [
+            {
+                "date": "2022-12-12",
+                "time": "15:03:00",
+                "type": "message",
+                "text": "Lorem ipsum dolor sit amet",
+                "isRead": true
+            }
+        ]
+    },
+    {
+        "sender": "pt",
+        "content": [
+            {
+                "date": "2022-12-12",
+                "time": "15:29:00",
+                "type": "message",
+                "text": "Lorem ipsum dolor sit amet",
+                "isRead": true
+            },
+            {
+                "date": "2022-12-12",
+                "time": "15:30:00",
+                "type": "message",
+                "text": "Lorem ipsum dolor sit amet",
+                "isRead": true
+            }
+        ]
+    },
+    {
+        "sender": "client",
+        "content": [
+            {
+                "date": "2022-12-12",
+                "time": "15:31:00",
+                "type": "message",
+                "text": "Lorem ipsum dolor sit amet",
+                "isRead": true
+            }
+        ]
+    },
+    {
+        "sender": "client",
+        "content": [
+            {
+                "date": "2022-12-12",
+                "time": "15:32:00",
+                "type": "videocall",
+                "text": "Pedido de videochamada",
+                "isRead": true
+            }
+        ]
+    },
+    {
+        "sender": "pt",
+        "content": [
+            {
+                "date": "2022-12-12",
+                "time": "15:34:00",
+                "type": "videocall",
+                "text": "Videochamada (6 min)",
+                "isRead": true
+            }
+        ]
+    }
+]
