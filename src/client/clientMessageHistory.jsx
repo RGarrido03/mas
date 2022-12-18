@@ -8,14 +8,14 @@ import Data from '../api/client/messageHistory.json';
 
 function clientMessageHistory() {
     return (
-        <div style={{ minHeight: 'calc(100vh - 58px - 75px)', paddingTop: '58px', paddingBottom: '75px' }}>
+        <div style={{ minHeight: '100vh', paddingTop: '58px', paddingBottom: '75px' }} className="d-flex align-items-end">
             <HelmetProvider>
                 <Helmet>
                     <title>Mensagens</title>
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="client" />
-            <Container fluid>
+            <Container fluid className='mb-3'>
                 {Data.map((value, index) => {
                     if (value.sender === "client") {
                         return value.content.map((value_b, index_b) => {
