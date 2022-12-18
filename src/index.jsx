@@ -51,7 +51,7 @@ root.render(
         <meta name="theme-color" content="#0066CC" />
       </Helmet>
     </HelmetProvider>
-    <Router basename='/mas'> {/* basename='/mas' is for GitHub Pages */}
+    <Router> {/* Add basename='/mas' for GitHub Pages deployment */}
       <Routes>
         <Route path="/" element={<ActorChoosing />} />
         <Route path="/client/home" element={<ClientHome />} />

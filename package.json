@@ -1,7 +1,7 @@
 {
   "name": "mas",
   "version": "0.1.0",
-  "homepage": "https://rgarrido03.github.io/mas",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
