@@ -1,0 +1,27 @@
+[
+    {
+        "weekday": "Segunda-feira",
+        "startTime": "18:00",
+        "endTime": "20:00"
+    },
+    {
+        "weekday": "Terça-feira",
+        "startTime": "11:00",
+        "endTime": "12:00"
+    },
+    {
+        "weekday": "Quinta-feira",
+        "startTime": "15:00",
+        "endTime": "17:00"
+    },
+    {
+        "weekday": "Sexta-feira",
+        "startTime": "15:00",
+        "endTime": "17:00"
+    },
+    {
+        "weekday": "Sábado",
+        "startTime": "10:00",
+        "endTime": "12:00"
+    }
+]

@@ -21,7 +21,7 @@ function NavbarBackMessage(props) {
                         {props.actor === "pt" && <p className='m-0 py-0 fw-bold fs-5 white'>Jorge Guerreiro <i className='fa-solid fa-circle-small fa-2xs text-success'></i></p>}
                     </Stack>
                 </Navbar.Brand>
-                {props.actor === "client" && <Link to="/client/messages/videocall"><i className='fa-regular fa-video white fa-lg'></i></Link>}
+                {props.actor === "client" && <Link to="/client/messages/videocall/request"><i className='fa-regular fa-video white fa-lg'></i></Link>}
                 {props.actor === "pt" && <Link to="/pt/messages/videocall"><i className='fa-regular fa-video white fa-lg'></i></Link>}
             </Container>
         </Navbar>
