@@ -6,6 +6,7 @@ import ClientHome from './client/clientHome';
 import ClientExercise from './client/clientExercise';
 import ClientExerciseClasses from './client/clientExerciseClasses';
 import ClientExercisePlan from './client/clientExerciseChangePlan';
+import ClientExerciseVideocall from './client/clientExerciseVideocall';
 import ClientMessageVideocall from './client/clientMessageVideocall';
 import ClientMessageVideocallRequest from './client/clientMessageVideocallRequest';
 import ClientMessages from './client/clientMessages';
@@ -47,6 +48,7 @@ root.render(
         <Route path="/client/exercise" element={<ClientExercise />} />
         <Route path="/client/exercise/extraclasses" element={<ClientExerciseClasses />} />
         <Route path="/client/exercise/changeplan" element={<ClientExercisePlan />} />
+        <Route path="/client/exercise/videocall" element={<ClientExerciseVideocall />} />
         <Route path="/client/messages" element={<ClientMessages />} />
         <Route path="/client/messages/history" element={<ClientMessageHistory />} />
         <Route path="/client/messages/videocall" element={<ClientMessageVideocall />} />
