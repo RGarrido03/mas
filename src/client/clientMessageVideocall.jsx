@@ -40,7 +40,7 @@ function ClientExerciseVideocall() {
                         </Col>
                         <Col></Col>
                         <Col xs="auto" className="ps-0">
-                            <div className="bg-danger rounded-circle d-flex align-items-center justify-content-center" style={{ width: '3rem', height: '3rem' }} onClick={() => navigate(-1)}>
+                            <div className="bg-danger rounded-circle d-flex align-items-center justify-content-center clickable" style={{ width: '3rem', height: '3rem' }} onClick={() => navigate(-1)}>
                                 <i className='fa-solid fa-phone-hangup white fa-lg'></i>
                             </div>
                         </Col>
