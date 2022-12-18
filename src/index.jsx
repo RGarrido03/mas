@@ -68,7 +68,7 @@ root.render(
         <Route path="/pt/home" element={<PTHome />} />
         <Route path="/pt/classes" element={<PTClasses />} />
         <Route path="/pt/classes/extraclasses" element={<PTClassesExtra />} />
-        <Route path="/pt/classes/extraclasses/videocall" element={<PTClassesVideocall />} />
+        <Route path="/pt/classes/videocall" element={<PTClassesVideocall />} />
         <Route path="/pt/messages" element={<PTMessages />} />
         <Route path="/pt/messages/history" element={<PTMessageHistory />} />
         <Route path="/pt/messages/videocall" element={<PTMessageVideocall />} />

@@ -27,12 +27,12 @@ function PTExerciseClasses() {
                                         <span className='semibold'>Dificuldade</span> {value.difficulty}
                                     </Col>
                                 </Row>
-                                {value.isOnline ? <Link to="/pt/classes/extraclasses/videocall" type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-video white'></i>&nbsp;&nbsp;Iniciar aula</Link> : ""}
+                                {value.isOnline ? <Link to="/pt/classes/videocall" type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-video white'></i>&nbsp;&nbsp;Iniciar aula</Link> : ""}
                             </Card.Text>
                         </Card.Body>
                     </Card>
                 })}
-                <Link to="/pt/classes/extraclasses/videocall" type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-add white'></i>&nbsp;&nbsp;Agendar aula</Link>
+                <Link to="/pt/classes/videocall" type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-add white'></i>&nbsp;&nbsp;Agendar aula</Link>
             </Container>
         </div>
     )
