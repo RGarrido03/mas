@@ -1,7 +1,5 @@
 import React from 'react';
 import { Container, Navbar, Stack } from 'react-bootstrap';
-import ProfilePictureClient from '../img/client.jpeg';
-import ProfilePicturePT from '../img/pt-male.png';
 
 function NavbarVideocallExercise(props) {
     const divStyle = { height: "2rem", width: "2rem" };
