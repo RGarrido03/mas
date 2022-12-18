@@ -19,7 +19,7 @@ function PTHome() {
             <Navbar actor="pt" text="Início" />
             <Container fluid className="mt-3">
                 {/* Exercise insight */}
-                <Link to="/pt/exercise" className='text-decoration-none'>
+                <Link to="/pt/classes" className='text-decoration-none'>
                     <Card className="off-white-background mb-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
