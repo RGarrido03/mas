@@ -1,4 +1,4 @@
-import Navbar from '../navbar/navbarVideocall';
+import Navbar from '../navbar/navbarVideocallExercise';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
@@ -16,7 +16,7 @@ function ClientExerciseVideocall() {
                     <meta name="theme-color" content="#000000" />
                 </Helmet>
             </HelmetProvider>
-            <Navbar actor="client" />
+            <Navbar text="Peito e bíceps" />
             <Container fluid className='px-3'>
                 <img src={PTMale} alt="Video feed" className='rounded-4 mb-3' style={{ width: '100%', height:'calc(100vh - 58px - 114px - (100vw / 3))', objectFit: 'cover' }} />
                 <Row>
@@ -30,16 +30,6 @@ function ClientExerciseVideocall() {
                         <img src={PTFemale} alt="Video feed" className='rounded-4' style={{ width: '100%', height:'100%', objectFit: 'cover' }} />
                     </Col>
                 </Row>
-                {/* <Stack direction='vertical' gap={3}>
-                    <Stack direction='horizontal' gap={3} style={{height:'100%', width:'100%'}}>
-                        <img src={PTMale} alt="Video feed" className='rounded-4' style={{height:'calc(50vh - 16px - 29px - 57px)', width:'50vw', objectFit:'cover'}}/>
-                        <img src={PTFemale} alt="Video feed" className='rounded-4' style={{height:'calc(50vh - 16px - 29px - 57px)', width:'50vw', objectFit:'cover'}}/>
-                    </Stack>
-                    <Stack direction='horizontal' gap={3} style={{height:'100%', width:'100%'}}>
-                        <img src={PTMale} alt="Video feed" className='rounded-4' style={{height:'calc(50vh - 16px - 29px - 57px)', width:'50vw', objectFit:'cover'}}/>
-                        <img src={PTFemale} alt="Video feed" className='rounded-4' style={{height:'calc(50vh - 16px - 29px - 57px)', width:'50vw', objectFit:'cover'}}/>
-                    </Stack>
-                </Stack> */}
             </Container>
             <Card className="dark-gray-background m-3 rounded-4 text-start fixed-bottom">
                 <Card.Body>
