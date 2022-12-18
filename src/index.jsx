@@ -20,6 +20,7 @@ import PTHome from './pt/PTHome';
 import PTLogin from './pt/PTLogin';
 import PTMessages from './pt/PTMessages';
 import PTMessageHistory from './pt/PTMessageHistory';
+import PTMessageVideocall from './pt/PTMessageVideocall';
 import PTRegister from './pt/PTRegister';
 import NotFound from './notFound';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
@@ -64,6 +65,7 @@ root.render(
         <Route path="/pt/home" element={<PTHome />} />
         <Route path="/pt/messages" element={<PTMessages />} />
         <Route path="/pt/messages/history" element={<PTMessageHistory />} />
+        <Route path="/pt/messages/videocall" element={<PTMessageVideocall />} />
         <Route path="/pt/login" element={<PTLogin />} />
         <Route path="/pt/register" element={<PTRegister />} />
         <Route path="*" element={<NotFound />} />
