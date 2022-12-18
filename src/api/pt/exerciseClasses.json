@@ -1,0 +1,30 @@
+[
+    {
+        "time": "16:00",
+        "duration": 45,
+        "focus": "Treino HIIT",
+        "difficulty": "Difícil",
+        "isOnline": false
+    },
+    {
+        "time": "17:00",
+        "duration": 45,
+        "focus": "Abdominais",
+        "difficulty": "Médio",
+        "isOnline": false
+    },
+    {
+        "time": "19:00",
+        "duration": 30,
+        "focus": "Peito, ombros e tríceps",
+        "difficulty": "Médio",
+        "isOnline": true
+    },
+    {
+        "time": "20:30",
+        "duration": 30,
+        "focus": "Bíceps e costas",
+        "difficulty": "Médio",
+        "isOnline": true
+    }
+]

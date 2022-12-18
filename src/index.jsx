@@ -19,6 +19,7 @@ import ClientRegister4 from './client/clientRegister4';
 import PTHome from './pt/PTHome';
 import PTLogin from './pt/PTLogin';
 import PTClasses from './pt/PTClasses';
+import PTClassesExtra from './pt/PTClassesExtra';
 import PTMessages from './pt/PTMessages';
 import PTMessageHistory from './pt/PTMessageHistory';
 import PTMessageVideocall from './pt/PTMessageVideocall';
@@ -65,6 +66,7 @@ root.render(
         <Route path="/client/register/4" element={<ClientRegister4 />} />
         <Route path="/pt/home" element={<PTHome />} />
         <Route path="/pt/classes" element={<PTClasses />} />
+        <Route path="/pt/classes/extraclasses" element={<PTClassesExtra />} />
         <Route path="/pt/messages" element={<PTMessages />} />
         <Route path="/pt/messages/history" element={<PTMessageHistory />} />
         <Route path="/pt/messages/videocall" element={<PTMessageVideocall />} />
