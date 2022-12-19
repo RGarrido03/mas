@@ -3,7 +3,6 @@ import Footer from '../footer/footerPT';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import PTMale from '../img/pt-male.png';
 import PTFemale from '../img/pt-female.png';
 import Data from '../api/pt/messageList.json';
 
