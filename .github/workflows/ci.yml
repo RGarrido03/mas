@@ -13,6 +13,7 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
+      - name: Pull changes
         run: git pull
       - name: Check out code
         uses: actions/checkout@v3
