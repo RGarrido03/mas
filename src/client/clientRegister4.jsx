@@ -38,7 +38,7 @@ function ClientRegister4() {
                         </Form.Select>
                     </InputGroup>
                     <div className="mx-auto">
-                        <Link to="/client/home" type="button" className="btn primary-blue-background white">Finalizar registo</Link>
+                        <Link to="/client/waiting-for-pt" type="button" className="btn primary-blue-background white">Finalizar registo</Link>
                     </div>
                 </div>
             </Container>
