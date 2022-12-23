@@ -17,6 +17,7 @@ import ClientRegister2 from './client/clientRegister2';
 import ClientRegister3 from './client/clientRegister3';
 import ClientRegister4 from './client/clientRegister4';
 import ClientWaitingForPT from './client/clientWaitingForPT';
+import ClientSubscription from './client/clientSubscription';
 import PTHome from './pt/PTHome';
 import PTLogin from './pt/PTLogin';
 import PTClasses from './pt/PTClasses';
@@ -70,6 +71,7 @@ root.render(
         <Route path="/client/register/3" element={<ClientRegister3 />} />
         <Route path="/client/register/4" element={<ClientRegister4 />} />
         <Route path="/client/waiting-for-pt" element={<ClientWaitingForPT />} />
+        <Route path="/client/subscription" element={<ClientSubscription />} />
         <Route path="/pt/home" element={<PTHome />} />
         <Route path="/pt/classes" element={<PTClasses />} />
         <Route path="/pt/classes/extraclasses" element={<PTClassesExtra />} />

@@ -94,7 +94,7 @@ function clientHome() {
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>Subscrição</Card.Title>
-                                <Card.Text>Renovada daqui a 3 dias via <i className='fa-brands fa-apple-pay fa-xl align-middle'></i></Card.Text>
+                                <Card.Text>Renovação a 15 de janeiro via <i className='fa-brands fa-cc-visa'></i></Card.Text>
                             </Col>
                             <Col xs="auto">
                                 <div className="float-end">
