@@ -31,7 +31,7 @@ function ClientExerciseVideocall() {
                     </Col>
                 </Row>
             </Container>
-            <Card className="dark-gray-background m-3 rounded-4 text-start fixed-bottom">
+            <Card className="hover dark-gray-background m-3 rounded-4 text-start fixed-bottom">
                 <Card.Body>
                     <Row>
                         <Col xs="auto" className="pe-0">

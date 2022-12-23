@@ -45,7 +45,7 @@ function PTExercise() {
 
                 {/* Extra classes */}
                 <Link to="/pt/classes/extraclasses" className='text-decoration-none'>
-                    <Card className="off-white-background mt-3">
+                    <Card className="hover off-white-background mt-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Text className='semibold'>Aulas extra</Card.Text>

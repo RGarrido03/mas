@@ -14,7 +14,7 @@ function ClientExerciseVideocallRequest() {
             </HelmetProvider>
             <Navbar text="Pedir videochamada" />
             <Container fluid className='text-center'>
-                <Card className="off-white-background mt-3 text-start">
+                <Card className="hover off-white-background mt-3 text-start">
                     <Card.Body>
                         <Row>
                             <Col>
@@ -27,7 +27,7 @@ function ClientExerciseVideocallRequest() {
                     </Card.Body>
                 </Card>
                 {Data.map((value, index) => {
-                    return <Card className="off-white-background mt-3 text-start" key={index + 1}>
+                    return <Card className="hover off-white-background mt-3 text-start" key={index + 1}>
                         <Card.Body>
                             <Row>
                                 <Col>

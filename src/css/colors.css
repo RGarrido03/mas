@@ -24,6 +24,7 @@
 .white-background {background-color: var(--white)}
 .off-white {color: var(--off-white)}
 .off-white-background {background-color: var(--off-white)}
+.hover:hover {background-color: #F0F0F0}
 .main-gray {color: var(--main-gray)}
 .main-gray-background {background-color: var(--main-gray)}
 .light-gray {color: var(--light-gray)}

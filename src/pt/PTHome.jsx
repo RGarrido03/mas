@@ -20,7 +20,7 @@ function PTHome() {
             <Container fluid className="mt-3">
                 {/* Exercise insight */}
                 <Link to="/pt/classes" className='text-decoration-none'>
-                    <Card className="off-white-background mb-3">
+                    <Card className="hover off-white-background mb-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>{ExerciseData["actual"].focus}</Card.Title>
@@ -37,7 +37,7 @@ function PTHome() {
 
                 {/* Messages insight */}
                 <Link to="/pt/messages" className='text-decoration-none'>
-                    <Card className="off-white-background mb-3">
+                    <Card className="hover off-white-background mb-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>{(UnreadMessages.length > 0) ? UnreadMessages.length : "Sem"} conversas por ler.</Card.Title>
@@ -67,7 +67,7 @@ function PTHome() {
                 {(Notifications.length > 0) ? <p className="mt-4 mb-2 bold fs-5">Notificações</p> : ""}
                 {(Notifications.length > 0) ? Notifications.map((value, index) => {
                     return <Link to={value.link} className='text-decoration-none middle-gray'>
-                        <Card className="off-white-background mb-3">
+                        <Card className="hover off-white-background mb-3">
                             <Card.Body>
                                 <Row className="d-flex align-items-center">
                                     <Col xs="auto" className="pe-0">

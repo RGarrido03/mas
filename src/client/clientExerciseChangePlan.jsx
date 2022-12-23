@@ -14,13 +14,13 @@ function ClientExerciseChangePlan() {
             <Navbar text="Sugerir alterações ao plano" />
             <Container fluid>
                 {Data["done"].map((value, index) => {
-                    return <Card className="off-white-background mt-3" key={index + 1}>
+                    return <Card className="hover off-white-background mt-3" key={index + 1}>
                         <Card.Body>
                             <Card.Title className='mb-0 fs-6'><span className='bold text-success'>{index + 1}º dia</span> | {value.focus}</Card.Title>
                         </Card.Body>
                     </Card>
                 })}
-                <Card className="off-white-background mt-3" key={Data["done"].length + 1}>
+                <Card className="hover off-white-background mt-3" key={Data["done"].length + 1}>
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{Data["done"].length + 1}º dia</span> | {Data["actual"].focus}</Card.Title>
                             <Card.Text className='fs-7 text-center'>
@@ -47,7 +47,7 @@ function ClientExerciseChangePlan() {
                         </Card.Body>
                     </Card>
                 {Data["next"].map((value, index) => {
-                    return <Card className="off-white-background mt-3" key={index + Data["done"].length + 2}>
+                    return <Card className="hover off-white-background mt-3" key={index + Data["done"].length + 2}>
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{index + Data["done"].length + 2}º dia</span> | {value.focus}</Card.Title>
                             <Card.Text className='fs-7 text-center'>

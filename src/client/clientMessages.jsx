@@ -20,7 +20,7 @@ function clientMessages() {
                 {/* Own PT */}
                 <p className="fs-5 bold mb-0 mt-3">Contacta o teu Personal Trainer</p>
                 <Link to="/client/messages/history" className='text-decoration-none'>
-                    <Card className="off-white-background mt-3">
+                    <Card className="hover off-white-background mt-3">
                         <Card.Body>
                             <Row className="d-flex align-items-center">
                                 <Col xs="auto">
@@ -44,7 +44,7 @@ function clientMessages() {
                 <p className="fs-5 bold mb-0 mt-4">Encontra um Personal Trainer</p>
                 {Data["available"].map((value) => {
                     return <Link to="/client/messages/history" className='text-decoration-none'>
-                        <Card className="off-white-background mt-3" key={value.name}>
+                        <Card className="hover off-white-background mt-3" key={value.name}>
                             <Card.Body>
                                 <Row className="d-flex align-items-center">
                                     <Col xs="auto">

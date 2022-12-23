@@ -38,7 +38,7 @@ function PTUserDetails() {
 
                 {/* Nutrition insight */}
                 <Link to="/pt/users/details/nutrition" className='text-decoration-none'>
-                    <Card className="off-white-background mt-3">
+                    <Card className="hover off-white-background mt-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>Almoço (320kcal)</Card.Title>
@@ -55,7 +55,7 @@ function PTUserDetails() {
 
                 {/* Measures insight */}
                 <Link to="/pt/users/details/measures" className='text-decoration-none'>
-                    <Card className="off-white-background mt-3">
+                    <Card className="hover off-white-background mt-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>Massa muscular</Card.Title>

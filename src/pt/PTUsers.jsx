@@ -18,7 +18,7 @@ function PTMessages() {
             <Container fluid>
                 {Data.map((value) => {
                     return <Link to="/pt/users/details" className='text-decoration-none'>
-                        <Card className="off-white-background mt-3" key={value.name}>
+                        <Card className="hover off-white-background mt-3" key={value.name}>
                             <Card.Body>
                                 <Row className="d-flex align-items-center">
                                     <Col xs="auto">

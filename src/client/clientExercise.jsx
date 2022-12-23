@@ -64,7 +64,7 @@ function ClientExercise() {
 
                 {/* Extra classes */}
                 <Link to="/client/exercise/extraclasses" className='text-decoration-none'>
-                    <Card className="off-white-background mt-3">
+                    <Card className="hover off-white-background mt-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Text><span className="semibold">Participar em aulas</span> extra</Card.Text>
@@ -78,7 +78,7 @@ function ClientExercise() {
 
                 {/* Suggest changes to actual plan */}
                 <Link to="/client/exercise/changeplan" className='text-decoration-none'>
-                    <Card className="off-white-background mt-3">
+                    <Card className="hover off-white-background mt-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Text><span className="semibold">Sugerir alterações</span> ao plano atual</Card.Text>

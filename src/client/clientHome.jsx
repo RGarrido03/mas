@@ -18,7 +18,7 @@ function clientHome() {
             <Container fluid className="mt-3">
                 {/* Exercise insight */}
                 <Link to="/client/exercise" className='text-decoration-none'>
-                    <Card className="off-white-background mb-3">
+                    <Card className="hover off-white-background mb-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title>
@@ -39,7 +39,7 @@ function clientHome() {
 
                 {/* Messages insight */}
                 <Link to="/client/messages" className='text-decoration-none'>
-                    <Card className="off-white-background mb-3">
+                    <Card className="hover off-white-background mb-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>Precisas de ajuda?</Card.Title>
@@ -56,7 +56,7 @@ function clientHome() {
 
                 {/* Nutrition insight */}
                 <Link to="/client/nutrition" className='text-decoration-none'>
-                    <Card className="off-white-background mb-3">
+                    <Card className="hover off-white-background mb-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>Almoço (320kcal)</Card.Title>
@@ -73,7 +73,7 @@ function clientHome() {
 
                 {/* Measures insight */}
                 <Link to="/client/measures" className='text-decoration-none'>
-                    <Card className="off-white-background mb-3">
+                    <Card className="hover off-white-background mb-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>Massa muscular</Card.Title>
@@ -90,7 +90,7 @@ function clientHome() {
 
                 {/* Subscription insight */}
                 <Link to="/client/subscription" className='text-decoration-none'>
-                    <Card className="off-white-background mb-3">
+                    <Card className="hover off-white-background mb-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>Subscrição</Card.Title>
