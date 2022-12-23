@@ -1,37 +1,37 @@
-name: CI
-on:
-  pull_request:
-  push:
-    branches:
-      - main
+# name: CI
+# on:
+#   pull_request:
+#   push:
+#     branches:
+#       - main
 
-concurrency: build
+# concurrency: build
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v3
-      - name: Pull changes
-        run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "RGarrido03@users.noreply.github.com"
-          git pull
-      - name: Check out code
-        uses: actions/checkout@v3
-        with:
-          ref: 'main-for-github-pages'
-      - name: GIT Commit Build Artifacts (coverage, dist, devdist, docs)
-        if: github.event_name == 'push'
-        run: |
-          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push
-      - name: Set up NodeJS
-        uses: actions/setup-node@v3.5.1
-        with:
-          node-version: '19.x'
-      - name: Deploy to GitHub Pages
-        run: |
-          npm install
-          npm run deploy
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Check out code
+#         uses: actions/checkout@v3
+#       - name: Pull changes
+#         run: |
+#           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+#           git config --global user.email "RGarrido03@users.noreply.github.com"
+#           git pull
+#       - name: Check out code
+#         uses: actions/checkout@v3
+#         with:
+#           ref: 'main-for-github-pages'
+#       - name: GIT Commit Build Artifacts (coverage, dist, devdist, docs)
+#         if: github.event_name == 'push'
+#         run: |
+#           git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+#           git push
+#       - name: Set up NodeJS
+#         uses: actions/setup-node@v3.5.1
+#         with:
+#           node-version: '19.x'
+#       - name: Deploy to GitHub Pages
+#         run: |
+#           npm install
+#           npm run deploy
