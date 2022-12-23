@@ -14,8 +14,12 @@ function ActorChoosing() {
                 </div>
                 <div className="vstack gap-3 col-9 mx-auto" id="actorChoosing">
                     <p className="mb-0">Escolha uma das seguintes opções:</p>
-                    <Link to="/client/login" className="btn primary-blue-background white">Cliente</Link>
+                    <Link to="/client-nopt/login" className="btn primary-blue-background white">Cliente sem PT</Link>
+                    <Link to="/client/login" className="btn primary-blue-background white">Cliente com PT</Link>
                     <Link to="/pt/login" className="btn primary-blue-background white">Personal trainer</Link>
+                </div>
+                <div id="notes">
+                    <p className="mt-5 mb-0 fs-7 fw-light">Dúvidas? Carrega em <i className='fa-light fa-circle-question fa-sm'></i>.</p>
                 </div>
             </Container>
             <Footer actor="client" />
