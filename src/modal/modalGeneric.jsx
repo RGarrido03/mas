@@ -30,9 +30,10 @@ const ModalGeneric = (props) => {
             </Helmet>
           </HelmetProvider>
           {(actor === "client") ?
-            (<Link to='/client/subscription' className='text-decoration-none'><p><i className="fa-solid fa-credit-card"></i>&nbsp;&nbsp;Gerir subscrição</p></Link>) :
-            (<Link to='/pt/subscription' className='text-decoration-none'><p><i className="fa-solid fa-user"></i>&nbsp;&nbsp;Gerir inscrição na Fitness Hut</p></Link>)
+            (<Link to='/client/profile' className='text-decoration-none'><p><i className="fa-solid fa-user"></i>&nbsp;&nbsp;Editar perfil</p></Link>) :
+            (<Link to='/pt/profile' className='text-decoration-none'><p><i className="fa-solid fa-user"></i>&nbsp;&nbsp;Editar perfil</p></Link>)
           }
+          {(actor === "client") ? (<Link to='/client/subscription' className='text-decoration-none'><p><i className="fa-solid fa-credit-card"></i>&nbsp;&nbsp;Gerir subscrição</p></Link>) : ""}
           <p className="clickable"><i className="fa-solid fa-gear"></i>&nbsp;&nbsp;Definições</p>
           <p className="clickable mb-0"><i className="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Acerca da app</p>
         </Modal.Body>
