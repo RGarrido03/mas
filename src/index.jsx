@@ -55,7 +55,7 @@ root.render(
         <meta name="theme-color" content="#0066CC" />
       </Helmet>
     </HelmetProvider>
-    <Router> {/* Add basename='/mas' for GitHub Pages deployment */}
+    <Router basename={process.env.REACT_APP_BASENAME}>
       <Routes>
         <Route path="/" element={<ActorChoosing />} />
         <Route path="/client/home" element={<ClientHome />} />
