@@ -11,16 +11,12 @@ index 6e98e65..08853c9 100644
    "private": true,
    "dependencies": {
      "@fortawesome/fontawesome-svg-core": "^6.2.1",
-diff --git a/src/index.jsx b/src/index.jsx
-index 2ff3a8c..0733cba 100644
---- a/src/index.jsx
-+++ b/src/index.jsx
-@@ -55,7 +55,7 @@ root.render(
-         <meta name="theme-color" content="#0066CC" />
-       </Helmet>
-     </HelmetProvider>
--    <Router> {/* Add basename='/mas' for GitHub Pages deployment */}
-+    <Router basename='/mas'> {/* Add basename='/mas' for GitHub Pages deployment */}
-       <Routes>
-         <Route path="/" element={<ActorChoosing />} />
-         <Route path="/client/home" element={<ClientHome />} />
+diff --git a/.env b/.env
+index f6d72d5..cca1146 100644
+--- a/.env
++++ b/.env
+@@ -1 +1 @@
+-REACT_APP_BASENAME=""
+\ No newline at end of file
++REACT_APP_BASENAME="/mas"
+\ No newline at end of file
