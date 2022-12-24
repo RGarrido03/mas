@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
+      - name: Configure git credentials
+        uses: OleksiyRudenko/gha-git-credentials@v2.1.1
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
       - name: Add patch file with required changes for GitHub Pages
         run: git apply github-pages.patch
       - name: Set up NodeJS
