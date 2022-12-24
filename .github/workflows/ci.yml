@@ -13,14 +13,15 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
-      - name: Add 
-        run: |
-          git apply github-pages.patch
+      - name: Add patch file with required changes for GitHub Pages
+        run: git apply github-pages.patch
       - name: Set up NodeJS
         uses: actions/setup-node@v3.5.1
         with:
           node-version: '19.x'
       - name: Deploy to GitHub Pages
         run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           npm install
           npm run deploy
