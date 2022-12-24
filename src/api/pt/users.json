@@ -1,22 +1,63 @@
-[
-    {
-        "name": "Carolina Patrocínio",
-        "text": "Sugeriu alterações ao plano."
-    },
-    {
-        "name": "Jorge Guerreiro",
-        "text": "Aumentou a massa muscular."
-    },
-    {
-        "name": "Raquel Antunes",
-        "text": "Perdeu massa gorda."
-    },
-    {
-        "name": "António Silva",
-        "text": "Sem destaques."
-    },
-    {
-        "name": "Bárbara Santos",
-        "text": "Pretende assistir a uma aula."
-    }
-]
+{
+    "waiting": [
+        {
+            "name": "Daniela Martins",
+            "age": 25,
+            "height": 1.60,
+            "weight": 80,
+            "focus": "Perder peso (55kg)",
+            "gender": "female"
+        },
+        {
+            "name": "David Luz",
+            "age": 19,
+            "height": 1.85,
+            "weight": 75,
+            "focus": "Aumento de massa muscular",
+            "gender": "male"
+        },
+        {
+            "name": "Ana Pereira",
+            "age": 22,
+            "height": 1.70,
+            "weight": 60,
+            "focus": "Preparação para competição",
+            "gender": "female"
+        },
+        {
+            "name": "Paulo Peixoto",
+            "age": 23,
+            "height": 1.75,
+            "weight": 70,
+            "focus": "Manutenção da forma física",
+            "gender": "male"
+        }
+    ],
+    "assigned": [
+        {
+            "name": "Carolina Patrocínio",
+            "text": "Sugeriu alterações ao plano.",
+            "gender": "female"
+        },
+        {
+            "name": "Jorge Guerreiro",
+            "text": "Aumentou a massa muscular.",
+            "gender": "male"
+        },
+        {
+            "name": "Raquel Antunes",
+            "text": "Perdeu massa gorda.",
+            "gender": "female"
+        },
+        {
+            "name": "António Silva",
+            "text": "Sem destaques.",
+            "gender": "male"
+        },
+        {
+            "name": "Bárbara Santos",
+            "text": "Pretende assistir a uma aula.",
+            "gender": "female"
+        }
+    ]
+}
