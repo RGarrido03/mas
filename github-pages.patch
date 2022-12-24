@@ -15,7 +15,7 @@ diff --git a/src/index.jsx b/src/index.jsx
 index 2ff3a8c..0733cba 100644
 --- a/src/index.jsx
 +++ b/src/index.jsx
-@@ -53,7 +53,7 @@ root.render(
+@@ -54,7 +54,7 @@ root.render(
          <meta name="theme-color" content="#0066CC" />
        </Helmet>
      </HelmetProvider>
