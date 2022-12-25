@@ -20,7 +20,7 @@ GitHub Actions is configured in this repo so that the deployed app is updated, e
 Due to the way GitHub Pages works, the app's routing wouldn't work properly on the live page. To fix this, an HTML file named `404.html` was added to the `public` folder, which redirects all requests to the `index.html` file. This file is automatically copied to the `build` folder when the app is built for production.
 
 Because of that, <b>a few changes are required to the app's routing</b>. The `package.json` file has to be modified to add the `homepage` prop, with the value `"https://rgarrido03.github.io/mas"`, and the `BrowserRouter` component needs a `basename` prop, with the value `"/mas"`. An example is shown here 👇:
-```json
+```jsonc
 // package.json
 {
   "name": "mas",
