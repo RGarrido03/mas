@@ -11,6 +11,7 @@ import ClientMessageVideocall from './client/clientMessageVideocall';
 import ClientMessageVideocallRequest from './client/clientMessageVideocallRequest';
 import ClientMessages from './client/clientMessages';
 import ClientMessageHistory from './client/clientMessageHistory';
+import ClientNutrition from './client/clientNutrition';
 import ClientLogin from './client/clientLogin';
 import ClientRegister1 from './client/clientRegister1';
 import ClientRegister2 from './client/clientRegister2';
@@ -67,6 +68,7 @@ root.render(
         <Route path="/client/messages/history" element={<ClientMessageHistory />} />
         <Route path="/client/messages/videocall" element={<ClientMessageVideocall />} />
         <Route path="/client/messages/videocall/request" element={<ClientMessageVideocallRequest />} />
+        <Route path="/client/nutrition" element={<ClientNutrition />} />
         <Route path="/client/login" element={<ClientLogin />} />
         <Route path="/client/register/1" element={<ClientRegister1 />} />
         <Route path="/client/register/2" element={<ClientRegister2 />} />
