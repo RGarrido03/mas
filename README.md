@@ -13,29 +13,73 @@ Run the app with `npm start`. Node.js will automatically open [http://localhost:
 You may also see any lint errors in the console.
 
 ## Deployment
-The app is deployed on GitHub Pages. To deploy the app, run `npm run deploy`. This will build the app for production to the `build` folder, and then push the build files to the `gh-pages` branch.
+The app is deployed on GitHub Pages. To manually deploy the app, run `npm run deploy` - this will build the app for production to the `build` folder, and then push the build files to the `gh-pages` branch.
+
+GitHub Actions is configured in this repo so that the deployed app is updated, every time there's a push or a Pull Request.
 
 Due to the way GitHub Pages works, the app's routing wouldn't work properly on the live page. To fix this, an HTML file named `404.html` was added to the `public` folder, which redirects all requests to the `index.html` file. This file is automatically copied to the `build` folder when the app is built for production.
 
 Because of that, <b>a few changes are required to the app's routing</b>. The `package.json` file has to be modified to add the `homepage` prop, with the value `"https://rgarrido03.github.io/mas"`, and the `BrowserRouter` component needs a `basename` prop, with the value `"/mas"`. An example is shown here 👇:
 ```json
-package.json
+// package.json
 {
   "name": "mas",
   "version": "1.0",
   "homepage": "https://rgarrido03.github.io/mas",
   "private": true,
-  ...
+  // ...
 }
 ```
 
 ```html
-index.jsx
+<!-- index.jsx -->
 <Router basename="/mas">
-  ...
+  <!-- ... -->
 </Router>
 ```
-By default, the `main` branch doesn't include these changes. They have to be added every time one wants to deploy the app to GitHub Pages.
+
+Although the `main` branch doesn't include these changes, there is a patch file called `github-pages.patch` in the project's root folder, which is applied every time GitHub Actions is called.
+
+However, the `basename` prop change would require a line numbers change in `github-pages.patch` every time there are changes in `index.jsx`. Instead, an environment variable called `REACT_APP_BASENAME` (stored in the `.env` file) is used in that prop. That way, both files look like this 👇:
+
+```html
+<!-- index.jsx -->
+<Router basename={process.env.REACT_APP_BASENAME}>
+  <!-- ... -->
+</Router>
+```
+
+```properties
+# .env
+REACT_APP_BASENAME="/mas"
+```
+
+Therefore, the patch file includes these changes 👇:
+```patch
+diff --git a/package.json b/package.json
+index 6e98e65..08853c9 100644
+--- a/package.json
++++ b/package.json
+@@ -1,7 +1,7 @@
+ {
+   "name": "mas",
+   "version": "2.0.0-beta",
+-  "homepage": ".",
++  "homepage": "https://rgarrido03.github.io/mas",
+   "private": true,
+   "dependencies": {
+     "@fortawesome/fontawesome-svg-core": "^6.2.1",
+diff --git a/.env b/.env
+index f6d72d5..cca1146 100644
+--- a/.env
++++ b/.env
+@@ -1 +1 @@
+-REACT_APP_BASENAME=""
+\ No newline at end of file
++REACT_APP_BASENAME="/mas"
+\ No newline at end of file
+
+```
 
 ## File & folder structure
 `package.json`\
@@ -43,6 +87,12 @@ Contains the project's dependencies and scripts.
 
 `404.html`\
 HTML page that replaces the default GitHub Pages 404 page and redirects all requests to the `index.html` file.
+
+`github-pages.patch`\
+Patch file that is applied every time GitHub Actions is called. It includes the changes required to deploy the app on GitHub Pages. Check the [Deployment section](#Deployment) for more info.
+
+`.env`\
+Environment variables file. It contains the `REACT_APP_BASENAME` variable, which is used in the `index.jsx` file.
 
 `public`\
 Contains the `index.html` file, which is base HTML for every page. It also has the app logos and manifest.
