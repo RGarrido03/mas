@@ -2,10 +2,11 @@
     "done": [
         {
             "weekday": "Segunda-feira",
-            "calories": 350,
+            "calories": 2000,
             "meals": [
                 {
                     "type": "Pequeno-almoço",
+                    "icon": "house-day",
                     "calories": 300,
                     "protein": 15,
                     "fat": 4,
@@ -13,6 +14,7 @@
                 },
                 {
                     "type": "Lanche da manhã",
+                    "icon": "mug-saucer",
                     "calories": 200,
                     "protein": 10,
                     "fat": 3,
@@ -20,6 +22,7 @@
                 },
                 {
                     "type": "Almoço",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 30,
                     "fat": 2,
@@ -27,6 +30,7 @@
                 },
                 {
                     "type": "Lanche da tarde",
+                    "icon": "apple-whole",
                     "calories": 100,
                     "protein": 0.5,
                     "fat": 0.5,
@@ -34,6 +38,7 @@
                 },
                 {
                     "type": "Jantar",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 5,
                     "fat": 8,
@@ -43,10 +48,11 @@
         },
         {
             "weekday": "Terça-feira",
-            "calories": 500,
+            "calories": 2000,
             "meals": [
                 {
                     "type": "Pequeno-almoço",
+                    "icon": "house-day",
                     "calories": 300,
                     "protein": 15,
                     "fat": 4,
@@ -54,6 +60,7 @@
                 },
                 {
                     "type": "Lanche da manhã",
+                    "icon": "mug-saucer",
                     "calories": 200,
                     "protein": 10,
                     "fat": 3,
@@ -61,6 +68,7 @@
                 },
                 {
                     "type": "Almoço",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 30,
                     "fat": 2,
@@ -68,6 +76,7 @@
                 },
                 {
                     "type": "Lanche da tarde",
+                    "icon": "apple-whole",
                     "calories": 100,
                     "protein": 0.5,
                     "fat": 0.5,
@@ -75,6 +84,7 @@
                 },
                 {
                     "type": "Jantar",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 5,
                     "fat": 8,
@@ -84,10 +94,11 @@
         },
         {
             "weekday": "Quarta-feira",
-            "calories": 250,
+            "calories": 2000,
             "meals": [
                 {
                     "type": "Pequeno-almoço",
+                    "icon": "house-day",
                     "calories": 300,
                     "protein": 15,
                     "fat": 4,
@@ -95,6 +106,7 @@
                 },
                 {
                     "type": "Lanche da manhã",
+                    "icon": "mug-saucer",
                     "calories": 200,
                     "protein": 10,
                     "fat": 3,
@@ -102,6 +114,7 @@
                 },
                 {
                     "type": "Almoço",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 30,
                     "fat": 2,
@@ -109,6 +122,7 @@
                 },
                 {
                     "type": "Lanche da tarde",
+                    "icon": "apple-whole",
                     "calories": 100,
                     "protein": 0.5,
                     "fat": 0.5,
@@ -116,6 +130,7 @@
                 },
                 {
                     "type": "Jantar",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 5,
                     "fat": 8,
@@ -126,10 +141,11 @@
     ],
     "actual": {
         "weekday": "Quinta-feira",
-        "calories": 710,
+        "calories": 2000,
         "meals": [
             {
                 "type": "Pequeno-almoço",
+                "icon": "house-day",
                 "calories": 300,
                 "protein": 15,
                 "fat": 4,
@@ -137,6 +153,7 @@
             },
             {
                 "type": "Lanche da manhã",
+                "icon": "mug-saucer",
                 "calories": 200,
                 "protein": 10,
                 "fat": 3,
@@ -144,6 +161,7 @@
             },
             {
                 "type": "Almoço",
+                "icon": "fork-knife",
                 "calories": 700,
                 "protein": 30,
                 "fat": 2,
@@ -151,6 +169,7 @@
             },
             {
                 "type": "Lanche da tarde",
+                "icon": "apple-whole",
                 "calories": 100,
                 "protein": 0.5,
                 "fat": 0.5,
@@ -158,6 +177,7 @@
             },
             {
                 "type": "Jantar",
+                "icon": "fork-knife",
                 "calories": 700,
                 "protein": 5,
                 "fat": 8,
@@ -168,10 +188,11 @@
     "next": [
         {
             "weekday": "Sexta-feira",
-            "calories": 350,
+            "calories": 2000,
             "meals": [
                 {
                     "type": "Pequeno-almoço",
+                    "icon": "house-day",
                     "calories": 300,
                     "protein": 15,
                     "fat": 4,
@@ -179,6 +200,7 @@
                 },
                 {
                     "type": "Lanche da manhã",
+                    "icon": "mug-saucer",
                     "calories": 200,
                     "protein": 10,
                     "fat": 3,
@@ -186,6 +208,7 @@
                 },
                 {
                     "type": "Almoço",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 30,
                     "fat": 2,
@@ -193,6 +216,7 @@
                 },
                 {
                     "type": "Lanche da tarde",
+                    "icon": "apple-whole",
                     "calories": 100,
                     "protein": 0.5,
                     "fat": 0.5,
@@ -200,6 +224,7 @@
                 },
                 {
                     "type": "Jantar",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 5,
                     "fat": 8,
@@ -209,10 +234,11 @@
         },
         {
             "weekday": "Sábado",
-            "calories": 350,
+            "calories": 2000,
             "meals": [
                 {
                     "type": "Pequeno-almoço",
+                    "icon": "house-day",
                     "calories": 300,
                     "protein": 15,
                     "fat": 4,
@@ -220,6 +246,7 @@
                 },
                 {
                     "type": "Lanche da manhã",
+                    "icon": "mug-saucer",
                     "calories": 200,
                     "protein": 10,
                     "fat": 3,
@@ -227,6 +254,7 @@
                 },
                 {
                     "type": "Almoço",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 30,
                     "fat": 2,
@@ -234,6 +262,7 @@
                 },
                 {
                     "type": "Lanche da tarde",
+                    "icon": "apple-whole",
                     "calories": 100,
                     "protein": 0.5,
                     "fat": 0.5,
@@ -241,6 +270,7 @@
                 },
                 {
                     "type": "Jantar",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 5,
                     "fat": 8,
@@ -250,10 +280,11 @@
         },
         {
             "weekday": "Domingo",
-            "calories": 350,
+            "calories": 2000,
             "meals": [
                 {
                     "type": "Pequeno-almoço",
+                    "icon": "house-day",
                     "calories": 300,
                     "protein": 15,
                     "fat": 4,
@@ -261,6 +292,7 @@
                 },
                 {
                     "type": "Lanche da manhã",
+                    "icon": "mug-saucer",
                     "calories": 200,
                     "protein": 10,
                     "fat": 3,
@@ -268,6 +300,7 @@
                 },
                 {
                     "type": "Almoço",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 30,
                     "fat": 2,
@@ -275,6 +308,7 @@
                 },
                 {
                     "type": "Lanche da tarde",
+                    "icon": "apple-whole",
                     "calories": 100,
                     "protein": 0.5,
                     "fat": 0.5,
@@ -282,6 +316,7 @@
                 },
                 {
                     "type": "Jantar",
+                    "icon": "fork-knife",
                     "calories": 700,
                     "protein": 5,
                     "fat": 8,
