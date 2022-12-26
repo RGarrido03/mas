@@ -14,8 +14,8 @@ function PTExerciseClasses() {
             </HelmetProvider>
             <Navbar text="Aulas extra" />
             <Container fluid className='text-center'>
-                {Data.map((value) => {
-                    return <Card className="off-white-background mt-3 text-start" key={value.name}>
+                {Data.map((value, index) => {
+                    return <Card key={index} className="off-white-background mt-3 text-start">
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{value.time}</span> | {value.focus}</Card.Title>
                             <Card.Text className='fs-7 text-center'>

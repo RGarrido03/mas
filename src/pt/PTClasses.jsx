@@ -30,9 +30,9 @@ function PTExercise() {
                                 </Col>
                             </Row>
                             {Data["next"].map((value, index) => {
-                                return <Row className="d-flex align-items-end">
+                                return <Row key={index + 1 + Data["done"].length} className="d-flex align-items-end">
                                     <Col>
-                                        <p key={1 + Data["done"].length} className='mt-3 mb-0'><span className="fw-semibold">{value.time}</span>&nbsp; {value.focus} ({value.duration} minutos)</p>
+                                        <p className='mt-3 mb-0'><span className="fw-semibold">{value.time}</span>&nbsp; {value.focus} ({value.duration} minutos)</p>
                                     </Col>
                                     <Col xs="auto">
                                         <i className={((value.isOnline) ? 'fa-play' : 'fa-building') + ' fa-solid'}></i>

@@ -66,7 +66,7 @@ function PTHome() {
                 {/* Notifications */}
                 {(Notifications.length > 0) ? <p className="mt-4 mb-2 bold fs-5">Notificações</p> : ""}
                 {(Notifications.length > 0) ? Notifications.map((value, index) => {
-                    return <Link to={value.link} className='text-decoration-none middle-gray'>
+                    return <Link to={value.link} key={index} className='text-decoration-none middle-gray'>
                         <Card className="hover off-white-background mb-3">
                             <Card.Body>
                                 <Row className="d-flex align-items-center">

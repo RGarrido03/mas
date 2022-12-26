@@ -42,8 +42,8 @@ function PTUsers() {
                         </Card.Body>
                     </Card>
                 </Link>
-                {Data.assigned.map((value) => {
-                    return <Link to="/pt/users/details" className='text-decoration-none'>
+                {Data.assigned.map((value, index) => {
+                    return <Link to="/pt/users/details" key={index} className='text-decoration-none'>
                         <Card className="hover off-white-background mt-3" key={value.name}>
                             <Card.Body>
                                 <Row className="d-flex align-items-center">
