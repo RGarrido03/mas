@@ -29,7 +29,7 @@ function ClientExerciseClasses() {
                                         <span className='semibold'>PT</span> {value.pt}<br />
                                     </Col>
                                 </Row>
-                                <Link to="/client/exercise/videocall" type="button" className="btn primary-blue-background white mt-3">Participar</Link>
+                                <Link to="/client/exercise/videocall" type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-video white' />&nbsp;&nbsp;Participar</Link>
                             </Card.Text>
                         </Card.Body>
                     </Card>

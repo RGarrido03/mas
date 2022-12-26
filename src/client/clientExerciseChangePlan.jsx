@@ -37,9 +37,9 @@ function ClientExerciseChangePlan() {
                                 <Row>
                                     <Col></Col>
                                     <Col xs="auto">
-                                        <Button type="button" className="btn primary-blue-background white mt-3">Editar</Button>
+                                        <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-pen-to-square white' />&nbsp;&nbsp;Editar</Button>
                                         &nbsp;&nbsp;
-                                        <Button type="button" className="btn off-white-background border middle-gray mt-3">Ignorar</Button>
+                                        <Button type="button" className="btn off-white-background border middle-gray mt-3"><i className='fa-solid fa-xmark' />&nbsp;&nbsp;Ignorar</Button>
                                     </Col>
                                     <Col></Col>
                                 </Row>
@@ -64,9 +64,9 @@ function ClientExerciseChangePlan() {
                                 <Row>
                                     <Col></Col>
                                     <Col xs="auto">
-                                        <Button type="button" className="btn primary-blue-background white mt-3">Editar</Button>
+                                        <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-pen-to-square white' />&nbsp;&nbsp;Editar</Button>
                                         &nbsp;&nbsp;
-                                        <Button type="button" className="btn off-white-background border middle-gray mt-3">Ignorar</Button>
+                                        <Button type="button" className="btn off-white-background border middle-gray mt-3"><i className='fa-solid fa-xmark' />&nbsp;&nbsp;Ignorar</Button>
                                     </Col>
                                     <Col></Col>
                                 </Row>

@@ -40,7 +40,7 @@ function ClientExerciseVideocallRequest() {
                         </Card.Body>
                     </Card>
                 })}
-                <Link to="/client/messages/videocall"><Button className="primary-blue-background mt-3">Enviar pedido</Button></Link>
+                <Link to="/client/messages/videocall"><Button className="primary-blue-background mt-3"><i className='fa-solid fa-paper-plane white' />&nbsp;&nbsp;Enviar pedido</Button></Link>
                 <p className="mb-0 mt-3 fw-light fs-7">Assim que o Personal Trainer aceitar o pedido, enviar-te-emos uma notificação.</p>
             </Container>
         </div>
