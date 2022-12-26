@@ -24,6 +24,11 @@ const ModalLogin = (props) => {
             <br />
             Num cenário real, esta página seria dispensável, uma vez que cada login se encontra associado a uma categoria específica, com devidas permissões de acesso.
           </p>
+          <p className="mb-1 mt-3 fw-bold">Quais são as diferenças entre Clientes?</p>
+          <p className="mb-0">
+            Os sufixos "Basic", "Standard" e "Premium" indicam o plano do Cliente. O Premium contém todas as funcionalidades, ao passo que os outros dois apenas têm acesso a uma parte delas.
+            Na secção "Escolha de um plano" - fase 2 do registo de clientes -, é possível consultar as características de cada plano.
+          </p>
           <p className="mb-1 mt-3 fw-bold">Onde é que posso consultar o código fonte ou a documentação desta app?</p>
           <p className="mb-0">
             Todo o código e documentos relacionados a esta app encontram-se disponíveis no <span style={{whiteSpace: 'nowrap'}}><i className='fa-brands fa-github'></i> <a href='https://github.com/RGarrido03/mas' className='middle-gray'>GitHub</a></span>.
