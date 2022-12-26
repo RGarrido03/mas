@@ -42,8 +42,8 @@ function clientMessages() {
 
                 {/* Other PTs */}
                 <p className="fs-5 bold mb-0 mt-4">Encontra um Personal Trainer</p>
-                {Data["available"].map((value) => {
-                    return <Link to="/client/messages/history" className='text-decoration-none'>
+                {Data["available"].map((value, index) => {
+                    return <Link to="/client/messages/history" key={index} className='text-decoration-none'>
                         <Card className="hover off-white-background mt-3" key={value.name}>
                             <Card.Body>
                                 <Row className="d-flex align-items-center">

@@ -42,9 +42,9 @@ function ClientStandardMessages() {
 
                 {/* Other PTs */}
                 <p className="fs-5 bold mb-0 mt-4">Encontra um Personal Trainer</p>
-                {Data["available"].map((value) => {
-                    return <Link to="/client-standard/messages/history" className='text-decoration-none'>
-                        <Card className="hover off-white-background mt-3" key={value.name}>
+                {Data["available"].map((value, index) => {
+                    return <Link key={index} to="/client-standard/messages/history" className='text-decoration-none'>
+                        <Card className="hover off-white-background mt-3">
                             <Card.Body>
                                 <Row className="d-flex align-items-center">
                                     <Col xs="auto">
