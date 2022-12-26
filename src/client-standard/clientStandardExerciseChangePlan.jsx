@@ -23,7 +23,7 @@ function ClientStandardExerciseChangePlan() {
                 <Card className="off-white-background mt-3" key={Data["done"].length + 1}>
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{Data["done"].length + 1}º dia</span> | {Data["actual"].focus}</Card.Title>
-                            <Card.Text className='fs-7 text-center'>
+                            <Card.Text className='fs-7 text-center' as='div'>
                                 <Row className='text-start'>
                                     <Col xs={6}>
                                         <span className='semibold'>Duração</span> {Data["actual"].duration} minutos<br />
@@ -50,7 +50,7 @@ function ClientStandardExerciseChangePlan() {
                     return <Card className="off-white-background mt-3" key={index + Data["done"].length + 2}>
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{index + Data["done"].length + 2}º dia</span> | {value.focus}</Card.Title>
-                            <Card.Text className='fs-7 text-center'>
+                            <Card.Text className='fs-7 text-center' as='div'>
                                 <Row className='text-start'>
                                     <Col xs={6}>
                                         <span className='semibold'>Duração</span> {value.duration} minutos<br />
