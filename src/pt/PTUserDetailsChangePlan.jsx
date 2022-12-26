@@ -14,13 +14,13 @@ function PTUserDetailsChangePlan() {
             <Navbar text="Editar plano de treino" />
             <Container fluid>
                 {Data["done"].map((value, index) => {
-                    return <Card className="hover off-white-background mt-3" key={index + 1}>
+                    return <Card className="off-white-background mt-3" key={index + 1}>
                         <Card.Body>
                             <Card.Title className='mb-0 fs-6'><span className='bold text-success'>{index + 1}º dia</span> | {value.focus}</Card.Title>
                         </Card.Body>
                     </Card>
                 })}
-                <Card className="hover off-white-background mt-3" key={Data["done"].length + 1}>
+                <Card className="off-white-background mt-3" key={Data["done"].length + 1}>
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{Data["done"].length + 1}º dia</span> | {Data["actual"].focus}</Card.Title>
                             <Card.Text className='fs-7 text-center'>
@@ -37,9 +37,9 @@ function PTUserDetailsChangePlan() {
                                 <Row>
                                     <Col></Col>
                                     <Col xs="auto">
-                                        <Button type="button" className="btn primary-blue-background white mt-3">Editar</Button>
+                                        <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-pen-to-square white' />&nbsp;&nbsp;Editar</Button>
                                         &nbsp;&nbsp;
-                                        <Button type="button" className="btn off-white-background border middle-gray mt-3">Ignorar</Button>
+                                        <Button type="button" className="btn btn-light off-white-background border middle-gray mt-3"><i className='fa-solid fa-xmark' />&nbsp;&nbsp;Ignorar</Button>
                                     </Col>
                                     <Col></Col>
                                 </Row>
@@ -47,7 +47,7 @@ function PTUserDetailsChangePlan() {
                         </Card.Body>
                     </Card>
                 {Data["next"].map((value, index) => {
-                    return <Card className="hover off-white-background mt-3" key={index + Data["done"].length + 2}>
+                    return <Card className="off-white-background mt-3" key={index + Data["done"].length + 2}>
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{index + Data["done"].length + 2}º dia</span> | {value.focus}</Card.Title>
                             <Card.Text className='fs-7 text-center'>
@@ -64,9 +64,9 @@ function PTUserDetailsChangePlan() {
                                 <Row>
                                     <Col></Col>
                                     <Col xs="auto">
-                                        <Button type="button" className="btn primary-blue-background white mt-3">Editar</Button>
+                                        <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-pen-to-square white' />&nbsp;&nbsp;Editar</Button>
                                         &nbsp;&nbsp;
-                                        <Button type="button" className="btn off-white-background border middle-gray mt-3">Ignorar</Button>
+                                        <Button type="button" className="btn btn-light off-white-background border middle-gray mt-3"><i className='fa-solid fa-xmark' />&nbsp;&nbsp;Ignorar</Button>
                                     </Col>
                                     <Col></Col>
                                 </Row>
@@ -74,6 +74,13 @@ function PTUserDetailsChangePlan() {
                         </Card.Body>
                     </Card>
                 })}
+                <Row>
+                    <Col></Col>
+                    <Col xs="auto">
+                        <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-paper-plane white' />&nbsp;&nbsp;Submeter alterações</Button>
+                    </Col>
+                    <Col></Col>
+                </Row>
             </Container>
         </div>
     )

@@ -84,6 +84,14 @@ function PTUserDetailsNutrition() {
                         </Card.Body>
                     </Card>
                 })}
+
+                <Row>
+                    <Col></Col>
+                    <Col xs="auto">
+                        <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-paper-plane white' />&nbsp;&nbsp;Submeter alterações</Button>
+                    </Col>
+                    <Col></Col>
+                </Row>
             </Container>
         </div>
     )
