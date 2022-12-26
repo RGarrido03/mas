@@ -81,7 +81,7 @@ function PTHome() {
                                         <Card.Text>{value.text}</Card.Text>
                                     </Col>
                                     <Col xs="auto">
-                                        <i class="fa-regular fa-chevron-right"></i>
+                                        <i className="fa-regular fa-chevron-right"></i>
                                     </Col>
                                 </Row>
                             </Card.Body>
