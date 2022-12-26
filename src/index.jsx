@@ -28,6 +28,27 @@ import ClientWaitingForPT from './client/clientWaitingForPT';
 import ClientSubscription from './client/clientSubscription';
 import ClientProfile from './client/clientProfile';
 
+// Client with Standard plan. It is equal to Premium plan, but with no nutrition. "standard" is added to the file path.
+import ClientStandardHome from './client-standard/clientStandardHome';
+import ClientStandardExercise from './client-standard/clientStandardExercise';
+import ClientStandardExerciseClasses from './client-standard/clientStandardExerciseClasses';
+import ClientStandardExerciseChangePlan from './client-standard/clientStandardExerciseChangePlan';
+import ClientStandardExerciseVideocall from './client-standard/clientStandardExerciseVideocall';
+import ClientStandardMeasures from './client-standard/clientStandardMeasures';
+import ClientStandardMeasuresChange from './client-standard/clientStandardMeasuresChange';
+import ClientStandardMessageVideocall from './client-standard/clientStandardMessageVideocall';
+import ClientStandardMessageVideocallRequest from './client-standard/clientStandardMessageVideocallRequest';
+import ClientStandardMessages from './client-standard/clientStandardMessages';
+import ClientStandardMessageHistory from './client-standard/clientStandardMessageHistory';
+import ClientStandardLogin from './client-standard/clientStandardLogin';
+import ClientStandardRegister1 from './client-standard/clientStandardRegister1';
+import ClientStandardRegister2 from './client-standard/clientStandardRegister2';
+import ClientStandardRegister3 from './client-standard/clientStandardRegister3';
+import ClientStandardRegister4 from './client-standard/clientStandardRegister4';
+import ClientStandardWaitingForPT from './client-standard/clientStandardWaitingForPT';
+import ClientStandardSubscription from './client-standard/clientStandardSubscription';
+import ClientStandardProfile from './client-standard/clientStandardProfile';
+
 // Client with Basic plan
 import ClientBasicExercise from './client-basic/clientBasicExercise';
 import ClientBasicExerciseChangePlan from './client-basic/clientBasicExerciseChangePlan';
@@ -107,6 +128,27 @@ root.render(
         <Route path="/client/waiting-for-pt" element={<ClientWaitingForPT />} />
         <Route path="/client/subscription" element={<ClientSubscription />} />
         <Route path="/client/profile" element={<ClientProfile />} />
+
+        {/* Client with Standard plan */}
+        <Route path="/client-standard/home" element={<ClientStandardHome />} />
+        <Route path="/client-standard/exercise" element={<ClientStandardExercise />} />
+        <Route path="/client-standard/exercise/extraclasses" element={<ClientStandardExerciseClasses />} />
+        <Route path="/client-standard/exercise/changeplan" element={<ClientStandardExerciseChangePlan />} />
+        <Route path="/client-standard/exercise/videocall" element={<ClientStandardExerciseVideocall />} />
+        <Route path="/client-standard/measures" element={<ClientStandardMeasures />} />
+        <Route path="/client-standard/measures/change" element={<ClientStandardMeasuresChange />} />
+        <Route path="/client-standard/messages" element={<ClientStandardMessages />} />
+        <Route path="/client-standard/messages/history" element={<ClientStandardMessageHistory />} />
+        <Route path="/client-standard/messages/videocall" element={<ClientStandardMessageVideocall />} />
+        <Route path="/client-standard/messages/videocall/request" element={<ClientStandardMessageVideocallRequest />} />
+        <Route path="/client-standard/login" element={<ClientStandardLogin />} />
+        <Route path="/client-standard/register/1" element={<ClientStandardRegister1 />} />
+        <Route path="/client-standard/register/2" element={<ClientStandardRegister2 />} />
+        <Route path="/client-standard/register/3" element={<ClientStandardRegister3 />} />
+        <Route path="/client-standard/register/4" element={<ClientStandardRegister4 />} />
+        <Route path="/client-standard/waiting-for-pt" element={<ClientStandardWaitingForPT />} />
+        <Route path="/client-standard/subscription" element={<ClientStandardSubscription />} />
+        <Route path="/client-standard/profile" element={<ClientStandardProfile />} />
 
         {/* Client with Basic plan */}
         <Route path="/client-basic/home" element={<ClientBasicHome />} />
