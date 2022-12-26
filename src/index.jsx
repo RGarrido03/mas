@@ -38,6 +38,7 @@ import PTUserDetails from './pt/PTUserDetails';
 import PTUserDetailsMeasures from './pt/PTUserDetailsMeasures';
 import PTUserDetailsNutrition from './pt/PTUserDetailsNutrition';
 import PTUserDetailsChangePlan from './pt/PTUserDetailsChangePlan';
+import PTProfile from './pt/PTProfile';
 import NotFound from './notFound';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 
@@ -100,6 +101,7 @@ root.render(
         <Route path="/pt/users/details/measures" element={<PTUserDetailsMeasures />} />
         <Route path="/pt/users/details/nutrition" element={<PTUserDetailsNutrition />} />
         <Route path="/pt/users/details/changeplan" element={<PTUserDetailsChangePlan />} />
+        <Route path="/pt/profile" element={<PTProfile />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
