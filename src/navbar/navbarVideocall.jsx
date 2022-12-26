@@ -11,9 +11,9 @@ function NavbarBackMessage(props) {
             <Container fluid className="px-3">
                 <Navbar.Brand className="m-0">
                     <Stack direction='horizontal' gap={3}>
-                        {props.actor === "client" && <img src={ProfilePicturePT} alt="Cliente" style={imgStyle} className="border rounded-circle clickable" />}
+                        {props.actor === "client" && <img src={ProfilePicturePT} alt="Cliente" style={imgStyle} className="border rounded-circle" />}
                         {props.actor === "client" && <p className='m-0 py-0 fw-bold fs-5 white'>Rui Pinheiro</p>}
-                        {props.actor === "pt" && <img src={ProfilePictureClient} alt="PT" style={imgStyle} className="border rounded-circle clickable" />}
+                        {props.actor === "pt" && <img src={ProfilePictureClient} alt="PT" style={imgStyle} className="border rounded-circle" />}
                         {props.actor === "pt" && <p className='m-0 py-0 fw-bold fs-5 white'>Jorge Guerreiro</p>}
                     </Stack>
                 </Navbar.Brand>
