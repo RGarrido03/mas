@@ -1,11 +1,20 @@
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { useEffect } from 'react';
 
 function ClientStandardWaitingForPT() {
+    useEffect(() => {
+        var content = document.getElementById('content');
+        if (content.offsetHeight < window.innerHeight) {
+            var margin = (window.innerHeight - content.offsetHeight) / 2;
+            content.style.marginTop = margin + "px";
+        }
+    });
+    
     const svgStyle = { height: "5rem", width: '5rem', fill: "#0066CC" };
     return (
-        <div style={{ marginTop: 'calc(58px + 16px)'}} className="d-flex align-items-center">
+        <div id='content'>
             <HelmetProvider>
                 <Helmet>
                     <title>A aguardar um PT</title>
