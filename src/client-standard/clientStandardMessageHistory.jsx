@@ -19,7 +19,6 @@ function ClientStandardMessageHistory() {
                 {Data.map((value, index) => {
                     if (value.sender === "client") {
                         return value.content.map((value_b, index_b) => {
-                            console.log(value_b);
                             if (value_b.type === "message") {
                                 return <div key={index_b} className="mt-3">
                                     <Row className='d-flex align-items-end'>
@@ -58,7 +57,6 @@ function ClientStandardMessageHistory() {
 
                     } else {
                         return value.content.map((value_b, index_b) => {
-                            console.log(value_b);
                             if (value_b.type === "message") {
                                 return <div key={index_b} className="mt-3">
                                     <Row className='d-flex align-items-end'>

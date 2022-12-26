@@ -7,8 +7,6 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 const ModalGeneric = (props) => {
   const { actor, show, handleClose } = props
 
-  console.log(actor);
-
   return (
     <div>
       <Modal show={show} onHide={handleClose} centered>
