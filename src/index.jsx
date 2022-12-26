@@ -28,6 +28,20 @@ import ClientWaitingForPT from './client/clientWaitingForPT';
 import ClientSubscription from './client/clientSubscription';
 import ClientProfile from './client/clientProfile';
 
+// Client with Basic plan
+import ClientBasicExercise from './client-basic/clientBasicExercise';
+import ClientBasicExerciseChangePlan from './client-basic/clientBasicExerciseChangePlan';
+import ClientBasicHome from './client-basic/clientBasicHome';
+import ClientBasicLogin from './client-basic/clientBasicLogin';
+import ClientBasicMeasures from './client-basic/clientBasicMeasures';
+import ClientBasicMeasuresChange from './client-basic/clientBasicMeasuresChange';
+import ClientBasicProfile from './client-basic/clientBasicProfile';
+import ClientBasicRegister1 from './client-basic/clientBasicRegister1';
+import ClientBasicRegister2 from './client-basic/clientBasicRegister2';
+import ClientBasicRegister3 from './client-basic/clientBasicRegister3';
+import ClientBasicRegister4 from './client-basic/clientBasicRegister4';
+import ClientBasicSubscription from './client-basic/clientBasicSubscription';
+
 // Personal Trainer
 import PTHome from './pt/PTHome';
 import PTLogin from './pt/PTLogin';
@@ -93,6 +107,20 @@ root.render(
         <Route path="/client/waiting-for-pt" element={<ClientWaitingForPT />} />
         <Route path="/client/subscription" element={<ClientSubscription />} />
         <Route path="/client/profile" element={<ClientProfile />} />
+
+        {/* Client with Basic plan */}
+        <Route path="/client-basic/home" element={<ClientBasicHome />} />
+        <Route path="/client-basic/exercise" element={<ClientBasicExercise />} />
+        <Route path="/client-basic/exercise/changeplan" element={<ClientBasicExerciseChangePlan />} />
+        <Route path="/client-basic/measures" element={<ClientBasicMeasures />} />
+        <Route path="/client-basic/measures/change" element={<ClientBasicMeasuresChange />} />
+        <Route path="/client-basic/login" element={<ClientBasicLogin />} />
+        <Route path="/client-basic/register/1" element={<ClientBasicRegister1 />} />
+        <Route path="/client-basic/register/2" element={<ClientBasicRegister2 />} />
+        <Route path="/client-basic/register/3" element={<ClientBasicRegister3 />} />
+        <Route path="/client-basic/register/4" element={<ClientBasicRegister4 />} />
+        <Route path="/client-basic/subscription" element={<ClientBasicSubscription />} />
+        <Route path="/client-basic/profile" element={<ClientBasicProfile />} />
 
         {/* Personal Trainer */}
         <Route path="/pt/home" element={<PTHome />} />

@@ -27,7 +27,7 @@ function NavbarHome(props) {
           </Stack>
         </Navbar.Brand>
         {(() => {
-          if (props.actor === "client") {
+          if (props.actor === "client" || props.actor === "client-basic" || props.actor === "client-standard") {
             return (
               <img src={ProfilePictureClient} style={imgStyle} className="border rounded-circle clickable" alt="Client profile pic" onClick={() => handleShow()} />
             )
