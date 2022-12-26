@@ -30,7 +30,7 @@ function ClientWaitingForPT() {
                     <p className='mb-1'>Fizemos um pedido interno a vários Personal Trainers, para que te possamos atribuir um.</p>
                     <p className='mb-3 bold'>Esta atribuição pode demorar algumas horas.</p>
                     <Link to="/client/home" type="button" className="btn primary-blue-background white">Seguinte</Link>
-                    <p className="fw-light fs-7 mt-5"><i className='fa-light fa-circle-info'></i><br />O botão Seguinte leva o cliente à página de início. Numa situação real, este botão não estaria disponível até um PT se encontrar atribuído.</p>
+                    <p className="fw-light fs-7 fixed-bottom"><i className='fa-light fa-circle-info'></i><br />Numa situação real, o botão Seguinte não estaria disponível até um PT se encontrar atribuído.</p>
                 </Col>
             </Row>
         </div>
