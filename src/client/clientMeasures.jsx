@@ -55,10 +55,10 @@ function ClientMeasures() {
                         <Card.Title className='bold m-0 mb-2'>Peso</Card.Title>
                         <Card.Text as="div">
                             <Row className='d-flex align-items-center'>
-                                <Col xs={8}>
+                                <Col xs={8} sm={7} md={6} lg={5} xl={4}>
                                     <img src={chart} className='w-100' alt="Gráfico com a evolução da massa muscular" />
                                 </Col>
-                                <Col xs={4}>
+                                <Col>
                                     +2,5kg em<br />duas semanas
                                 </Col>
                             </Row>
@@ -71,10 +71,10 @@ function ClientMeasures() {
                         <Card.Title className='bold m-0 mb-2'>Abdominal</Card.Title>
                         <Card.Text as="div">
                             <Row className='d-flex align-items-center'>
-                                <Col xs={8}>
+                                <Col xs={8} sm={7} md={6} lg={5} xl={4}>
                                     <div className="border rounded p-3 text-center">Gráfico</div>
                                 </Col>
-                                <Col xs={4}>
+                                <Col>
                                     -3cm em<br />duas semanas
                                 </Col>
                             </Row>
@@ -87,10 +87,10 @@ function ClientMeasures() {
                         <Card.Title className='bold m-0 mb-2'>Antebraço</Card.Title>
                         <Card.Text as="div">
                             <Row className='d-flex align-items-center'>
-                                <Col xs={8}>
+                                <Col xs={8} sm={7} md={6} lg={5} xl={4}>
                                     <div className="border rounded p-3 text-center">Gráfico</div>
                                 </Col>
-                                <Col xs={4}>
+                                <Col>
                                     +2cm em<br />uma semana
                                 </Col>
                             </Row>
@@ -103,10 +103,10 @@ function ClientMeasures() {
                         <Card.Title className='bold m-0 mb-2'>Braço</Card.Title>
                         <Card.Text as="div">
                             <Row className='d-flex align-items-center'>
-                                <Col xs={8}>
+                                <Col xs={8} sm={7} md={6} lg={5} xl={4}>
                                     <div className="border rounded p-3 text-center">Gráfico</div>
                                 </Col>
-                                <Col xs={4}>
+                                <Col>
                                     +2cm em<br />uma semana
                                 </Col>
                             </Row>
@@ -119,10 +119,10 @@ function ClientMeasures() {
                         <Card.Title className='bold m-0 mb-2'>Costas</Card.Title>
                         <Card.Text as="div">
                             <Row className='d-flex align-items-center'>
-                                <Col xs={8}>
+                                <Col xs={8} sm={7} md={6} lg={5} xl={4}>
                                     <div className="border rounded p-3 text-center">Gráfico</div>
                                 </Col>
-                                <Col xs={4}>
+                                <Col>
                                     +2cm em<br />uma semana
                                 </Col>
                             </Row>
@@ -135,10 +135,10 @@ function ClientMeasures() {
                         <Card.Title className='bold m-0 mb-2'>Coxas</Card.Title>
                         <Card.Text as="div">
                             <Row className='d-flex align-items-center'>
-                                <Col xs={8}>
+                                <Col xs={8} sm={7} md={6} lg={5} xl={4}>
                                     <div className="border rounded p-3 text-center">Gráfico</div>
                                 </Col>
-                                <Col xs={4}>
+                                <Col>
                                     +2cm em<br />uma semana
                                 </Col>
                             </Row>
@@ -151,10 +151,10 @@ function ClientMeasures() {
                         <Card.Title className='bold m-0 mb-2'>Gémeos</Card.Title>
                         <Card.Text as="div">
                             <Row className='d-flex align-items-center'>
-                                <Col xs={8}>
+                                <Col xs={8} sm={7} md={6} lg={5} xl={4}>
                                     <div className="border rounded p-3 text-center">Gráfico</div>
                                 </Col>
-                                <Col xs={4}>
+                                <Col>
                                     +2cm em<br />uma semana
                                 </Col>
                             </Row>
@@ -167,10 +167,10 @@ function ClientMeasures() {
                         <Card.Title className='bold m-0 mb-2'>Peito</Card.Title>
                         <Card.Text as="div">
                             <Row className='d-flex align-items-center'>
-                                <Col xs={8}>
+                                <Col xs={8} sm={7} md={6} lg={5} xl={4}>
                                     <div className="border rounded p-3 text-center">Gráfico</div>
                                 </Col>
-                                <Col xs={4}>
+                                <Col>
                                     +2cm em<br />uma semana
                                 </Col>
                             </Row>
@@ -183,10 +183,10 @@ function ClientMeasures() {
                         <Card.Title className='bold m-0 mb-2'>Rabo</Card.Title>
                         <Card.Text as="div">
                             <Row className='d-flex align-items-center'>
-                                <Col xs={8}>
+                                <Col xs={8} sm={7} md={6} lg={5} xl={4}>
                                     <div className="border rounded p-3 text-center">Gráfico</div>
                                 </Col>
-                                <Col xs={4}>
+                                <Col>
                                     +2cm em<br />uma semana
                                 </Col>
                             </Row>
