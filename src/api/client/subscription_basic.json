@@ -1,0 +1,16 @@
+{
+    "plan": {
+        "name": "Basic",
+        "description": "- Gestão de planos de treino\n- Medidas corporais",
+        "price": 9.99
+    },
+    "payment": {
+        "icon": "fa-brands fa-cc-visa",
+        "name": "Cartão de débito (acabado em 0595)"
+    },
+    "info": {
+        "type": "mensal",
+        "date": "15/01/2023",
+        "price": 9.99
+    }
+}
