@@ -2,6 +2,7 @@ import Navbar from '../navbar/navbarBack';
 import { Container, InputGroup, Stack, Button, Image, Row, Col } from 'react-bootstrap';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ProfilePictureClient from '../img/client.jpeg';
+import Data from '../api/client/profile.json';
 
 function ClientProfile() {
     return (
@@ -27,7 +28,7 @@ function ClientProfile() {
                 <Stack direction='vertical' gap={3} className="mb-3">
                     <InputGroup>
                         <span className="input-group-text"><i className="fa-solid fa-user"></i></span>
-                        <input type="text" className="form-control" placeholder="Jorge Guerreiro" aria-label="Nome" />
+                        <input type="text" className="form-control" placeholder={Data.name} aria-label="Nome" />
                     </InputGroup>
                     <InputGroup>
                         <span className="input-group-text"><i className="fa-solid fa-calendar"></i></span>
@@ -35,7 +36,7 @@ function ClientProfile() {
                     </InputGroup>
                     <InputGroup className="mb-1">
                         <span className="input-group-text"><i className="fa-solid fa-envelope"></i></span>
-                        <input type="text" className="form-control" placeholder="jorge.guerreiro@ua.pt" aria-label="Nome" />
+                        <input type="text" className="form-control" placeholder={Data.email} aria-label="Nome" />
                     </InputGroup>
                 </Stack>
                 <p className='mb-2 mt-3 bold fs-5'>Palavra-passe</p>
