@@ -14,11 +14,11 @@ function ClientStandardExerciseClasses() {
             </HelmetProvider>
             <Navbar text="Participar em aulas extra" />
             <Container fluid>
-                {Data.map((value) => {
-                    return <Card className="off-white-background mt-3" key={value.name}>
+                {Data.map((value, index) => {
+                    return <Card className="off-white-background mt-3" key={index}>
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{value.time}</span> | {value.focus}</Card.Title>
-                            <Card.Text className='fs-7 text-center'>
+                            <Card.Text className='fs-7 text-center' as='div'>
                                 <Row className='text-start'>
                                     <Col xs={6}>
                                         <span className='semibold'>Duração</span> {value.duration} minutos<br />
