@@ -3,17 +3,26 @@ import Footer from '../footer/footerLogin';
 import { Container, InputGroup, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { useEffect } from 'react';
 
 function ClientRegister4() {
+    useEffect(() => {
+        var content = document.getElementById('content');
+        if (content.offsetHeight < window.innerHeight) {
+            var margin = (window.innerHeight - content.offsetHeight) / 2;
+            content.style.marginTop = margin + "px";
+        }
+    });
+
     return (
-        <div style={{ height: 'calc(100vh - 58.64px)', paddingTop: '58.64px'}} className="d-flex align-items-center">
+        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: 'calc(58px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Registo (4/4)</title>
                 </Helmet>
             </HelmetProvider>
             <Navbar />
-            <Container fluid className='px-3 text-center'>
+            <Container fluid className='px-3 text-center' id='content'>
                 <div>
                     <h1>Registo</h1>
                     <h2 className="mb-5">Diz-nos mais sobre ti</h2>

@@ -3,18 +3,27 @@ import Footer from '../footer/footerLogin';
 import { Container, InputGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { useEffect } from 'react';
 
 function ClientStandardLogin() {
+    useEffect(() => {
+        var content = document.getElementById('content');
+        if (content.offsetHeight < window.innerHeight) {
+            var margin = (window.innerHeight - content.offsetHeight) / 2;
+            content.style.marginTop = margin + "px";
+        }
+    });
+
     let url = "";
     return (
-        <div style={{ height: 'calc(100vh - 58.64px)', paddingTop: '58.64px' }} className="d-flex align-items-center">
+        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: 'calc(58px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Login</title>
                 </Helmet>
             </HelmetProvider>
             <Navbar />
-            <Container fluid className='px-3 text-center'>
+            <Container fluid className='px-3 text-center' id='content'>
                 <div>
                     <h1>Bem-vindx</h1>
                     <h2 className="mb-5">à nova app Fitness Hut</h2>
