@@ -1,6 +1,5 @@
 import Navbar from '../navbar/navbarBack';
 import { Container, Card, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import chart from '../img/chart.svg';
 import Data from '../api/pt/userMeasures.json';
