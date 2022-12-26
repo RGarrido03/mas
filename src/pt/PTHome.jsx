@@ -70,8 +70,11 @@ function PTHome() {
                         <Card className="hover off-white-background mb-3">
                             <Card.Body>
                                 <Row className="d-flex align-items-center">
-                                    <Col xs="auto" className="pe-0">
+                                    <Col xs="auto" className="pe-0" style={{position:"relative"}}>
                                         <img src={PTFemale} style={{ height: '3rem' }} alt="Fotografia de perfil do Personal Trainer" className='border border-primary-blue rounded-circle' />
+                                        <div className='primary-blue-background rounded-circle d-flex justify-content-center align-items-center' style={{position:'absolute', right:0, bottom:0, height:'1.5rem', width:'1.5rem'}}>
+                                            <i className={'fa-solid ' + value.icon + ' white fa-2xs m-0 p-0'} />
+                                        </div>
                                     </Col>
                                     <Col>
                                         <Card.Title className='mb-1 fs-6 bold'>{value.from}</Card.Title>
