@@ -1,7 +1,7 @@
 import Navbar from '../navbar/navbarBack';
 import { Container, Card, Row, Col, Button } from 'react-bootstrap';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import Data from '../api/client/nutrition_weekly.json';
+import Data from '../api/pt/userNutrition_weekly.json';
 
 function PTUserDetailsNutrition() {
     return (
