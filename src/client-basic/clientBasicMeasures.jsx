@@ -8,7 +8,7 @@ import Data from '../api/client/measures.json';
 
 function ClientBasicMeasures() {
     return (
-        <div style={{ minHeight: 'calc(100vh - 58px - 57px - 32px)', marginTop: 'calc(58px + 16px)', marginBottom: 'calc(57px + 16px)' }}>
+        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: 'calc(57px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Medidas corporais</title>

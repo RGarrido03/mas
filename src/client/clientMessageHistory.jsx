@@ -8,7 +8,7 @@ import Data from '../api/client/messageHistory.json';
 
 function clientMessageHistory() {
     return (
-        <div style={{ minHeight: '100vh', paddingTop: '58px', paddingBottom: '75px' }} className="d-flex align-items-end">
+        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: 'calc(75px + 16px)' }} className="d-flex align-items-end">
             <HelmetProvider>
                 <Helmet>
                     <title>Mensagens</title>

@@ -5,7 +5,7 @@ import Data from '../api/client/exercise.json';
 
 function ClientBasicExerciseChangePlan() {
     return (
-        <div style={{ minHeight: 'calc(100vh - 58px)', paddingTop: '58px' }}>
+        <div style={{ marginTop: 'calc(58px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Editar plano semanal</title>

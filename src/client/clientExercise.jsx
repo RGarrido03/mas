@@ -7,7 +7,7 @@ import Data from '../api/client/exercise.json';
 
 function ClientExercise() {
     return (
-        <div style={{ minHeight: 'calc(100vh - 58px - 57px)', paddingTop: '58px', paddingBottom: '57px' }}>
+        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: 'calc(57px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Exercício</title>

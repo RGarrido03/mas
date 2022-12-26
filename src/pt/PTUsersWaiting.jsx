@@ -7,7 +7,7 @@ import Data from '../api/pt/users.json';
 
 function PTUsersWaiting() {
     return (
-        <div style={{ minHeight: 'calc(100vh - 56px)', paddingTop: '56px' }}>
+        <div style={{ marginTop: 'calc(56px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Clientes</title>

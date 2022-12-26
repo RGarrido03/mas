@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function PTExerciseClasses() {
     return (
-        <div style={{ minHeight: 'calc(100vh - 58px)', paddingTop: '58px' }}>
+        <div style={{ marginTop: 'calc(58px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Aulas extra</title>

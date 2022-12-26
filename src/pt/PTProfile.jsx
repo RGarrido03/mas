@@ -6,7 +6,7 @@ import Data from '../api/pt/profile.json';
 
 function PTProfile() {
     return (
-        <div style={{ minHeight: '100vh', paddingTop: '58px' }}>
+        <div style={{ marginTop: 'calc(58px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Editar perfil</title>

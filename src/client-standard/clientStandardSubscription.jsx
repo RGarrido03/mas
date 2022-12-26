@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function ClientStandardSubscription() {
     return (
-        <div style={{ minHeight: 'calc(100vh - 58px)', paddingTop: '58px' }}>
+        <div style={{ marginTop: 'calc(58px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Gerir subscrição</title>

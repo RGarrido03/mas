@@ -10,7 +10,7 @@ import PTFemale from '../img/pt-female.png';
 
 function PTHome() {
     return (
-        <div style={{ minHeight: 'calc(100vh - 58px - 57px)', paddingTop: '58px', paddingBottom: '57px' }}>
+        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: 'calc(57px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Início</title>
