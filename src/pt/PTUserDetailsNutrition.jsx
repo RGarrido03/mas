@@ -12,7 +12,7 @@ function PTUserDetailsNutrition() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Plano de nutrição" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {Data["done"].map((value, index) => {
                     return <Card className="off-white-background mt-3" key={index + 1}>
                         <Card.Body>

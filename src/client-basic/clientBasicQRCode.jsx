@@ -13,7 +13,7 @@ function ClientBasicQRCode() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Código QR" />
-            <Container fluid className='text-center' id='qrcodecontainer'>
+            <Container fluid className='px-3 text-center'>
                 <Row>
                     <Col></Col>
                     <Col xs={8} sm={6} md={4} lg={3} xl={2}>

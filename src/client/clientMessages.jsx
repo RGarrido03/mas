@@ -16,7 +16,7 @@ function clientMessages() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="client" text="Mensagens" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {/* Own PT */}
                 <p className="fs-5 bold mb-0 mt-3">Contacta o teu Personal Trainer</p>
                 <Link to="/client/messages/history" className='text-decoration-none'>

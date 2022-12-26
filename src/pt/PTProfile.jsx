@@ -13,7 +13,7 @@ function PTProfile() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Editar perfil" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 <p className='mb-2 mt-3 bold fs-5'>Fotografia de perfil</p>
                 <Row className='d-flex align-items-center'>
                     <Col xs={5} style={{position:'relative'}}>

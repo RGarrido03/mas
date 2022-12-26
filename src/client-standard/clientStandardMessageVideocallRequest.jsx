@@ -13,7 +13,7 @@ function ClientStandardExerciseVideocallRequest() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Pedir videochamada" />
-            <Container fluid className='text-center'>
+            <Container fluid className='px-3 text-center'>
                 <Card className="hover off-white-background mt-3 text-start">
                     <Card.Body>
                         <Row>

@@ -17,7 +17,7 @@ function PTHome() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="pt" text="Início" />
-            <Container fluid className="mt-3">
+            <Container fluid className="px-3 mt-3">
                 {/* Exercise insight */}
                 <Link to="/pt/classes" className='text-decoration-none'>
                     <Card className="hover off-white-background mb-3">

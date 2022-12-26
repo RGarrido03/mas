@@ -13,7 +13,7 @@ function ClientStandardProfile() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Editar perfil" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 <p className='mb-2 mt-3 bold fs-5'>Fotografia de perfil</p>
                 <Row className='d-flex align-items-center'>
                     <Col xs={5} sm={4} md={3} lg={2} xl={1} style={{position:'relative'}}>

@@ -13,7 +13,7 @@ function ClientExerciseClasses() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Participar em aulas extra" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {Data.map((value, index) => {
                     return <Card className="off-white-background mt-3" key={index}>
                         <Card.Body>

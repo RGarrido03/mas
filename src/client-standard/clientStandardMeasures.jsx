@@ -15,7 +15,7 @@ function ClientStandardMeasures() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="client-standard" text="Medidas corporais" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {/* Weekly plan */}
                 <Card className="off-white-background mt-3">
                     <Card.Body>

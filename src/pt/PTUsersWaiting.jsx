@@ -14,7 +14,7 @@ function PTUsersWaiting() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Clientes" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {Data.waiting.map((value) => {
                     return <Card className="off-white-background mt-3" key={value.name}>
                         <Card.Body>

@@ -14,7 +14,7 @@ function PTExercise() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="pt" text="Aulas" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {/* Daily plan */}
                 <Card className="off-white-background mt-3">
                     <Card.Body>

@@ -15,7 +15,7 @@ function PTMessages() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="pt" text="Mensagens" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {Data.map((value, index) => {
                     return <Link to="/pt/messages/history" key={index} className='text-decoration-none'>
                         <Card className="hover off-white-background mt-3" key={value.name}>

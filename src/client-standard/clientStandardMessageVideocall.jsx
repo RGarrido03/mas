@@ -15,7 +15,7 @@ function ClientStandardExerciseVideocall() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="client-standard" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 <img src={PTMale} alt="Video feed" className='rounded-4' style={{height:'calc(100vh - 58px - 114px)', width:'100%', objectFit:'cover'}}/>
             </Container>
             <Card className="dark-gray-background m-3 rounded-4 text-start fixed-bottom">

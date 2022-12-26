@@ -15,7 +15,7 @@ function ClientStandardHome() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="client-standard" text="Início"/>
-            <Container fluid className="mt-3">
+            <Container fluid className="px-3 mt-3">
                 {/* Exercise insight */}
                 <Link to="/client-standard/exercise" className='text-decoration-none'>
                     <Card className="hover off-white-background mb-3">

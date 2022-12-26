@@ -15,7 +15,7 @@ function ClientStandardMessageHistory() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="client" />
-            <Container fluid className='mb-3'>
+            <Container fluid className='px-3 mb-3'>
                 {Data.map((value, index) => {
                     if (value.sender === "client") {
                         return value.content.map((value_b, index_b) => {

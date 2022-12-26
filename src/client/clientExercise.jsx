@@ -14,7 +14,7 @@ function ClientExercise() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="client" text="Exercício" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {/* Workout insight */}
                 <Card className="mt-3 border-0">
                     <Card.Body className='p-0'>

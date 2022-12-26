@@ -11,7 +11,7 @@ function ClientStandardMeasuresChange() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Adicionar medidas" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 <Stack direction='vertical' gap={3} className="mb-3">
                 <input type="number" step={0.1} className="form-control" placeholder="Peso (kg)" aria-label="Peso (kg)" />
                     <input type="number" step={0.1} className="form-control" placeholder="Abdominal (cm)" aria-label="Abdominal (cm)" />

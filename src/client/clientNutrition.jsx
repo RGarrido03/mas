@@ -14,7 +14,7 @@ function ClientNutrition() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="client" text="Nutrição" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {/* Nutrition insight */}
                 <Card className="mt-3 border-0">
                     <Card.Body className='p-0'>

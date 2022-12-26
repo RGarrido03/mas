@@ -16,7 +16,7 @@ function PTUsers() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="pt" text="Clientes" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 <Link to="/pt/users/waiting" className='text-decoration-none'>
                     <Card className="hover off-white-background mt-3">
                         <Card.Body>

@@ -14,7 +14,7 @@ function PTUserDetails() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="pt" />
-            <Container fluid className="mt-3">
+            <Container fluid className="px-3 mt-3">
                 {/* Exercise insight */}
                 <Link to="/pt/users/details/changeplan" className='text-decoration-none'>
                     <Card className="hover off-white-background mt-3">

@@ -12,7 +12,7 @@ function ClientExerciseChangePlan() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Sugerir alterações ao plano" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {Data["done"].map((value, index) => {
                     return <Card className="off-white-background mt-3" key={index + 1}>
                         <Card.Body>

@@ -13,7 +13,7 @@ function PTExerciseClasses() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Aulas extra" />
-            <Container fluid className='text-center'>
+            <Container fluid className='px-3 text-center'>
                 {Data.map((value, index) => {
                     return <Card key={index} className="off-white-background mt-3 text-start">
                         <Card.Body>

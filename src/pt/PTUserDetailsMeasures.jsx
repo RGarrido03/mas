@@ -13,7 +13,7 @@ function PTUserDetailsMeasures() {
                 </Helmet>
             </HelmetProvider>
             <Navbar actor="client" text="Medidas corporais" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 {/* Weekly plan */}
                 <Card className="off-white-background mt-3">
                     <Card.Body>

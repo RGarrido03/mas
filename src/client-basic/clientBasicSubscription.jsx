@@ -12,7 +12,7 @@ function ClientBasicSubscription() {
                 </Helmet>
             </HelmetProvider>
             <Navbar text="Gerir subscrição" />
-            <Container fluid>
+            <Container fluid className='px-3'>
                 <Card className="off-white-background mt-3 text-start">
                     <Card.Body className='text-center'>
                         <div className="text-start">
