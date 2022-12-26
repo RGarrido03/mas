@@ -33,6 +33,17 @@ const ModalGeneric = (props) => {
           </HelmetProvider>
           {(() => {
             if (actor === "client") {
+              return (<Link to='/client/qrcode' className='text-decoration-none'><p><i className="fa-solid fa-qrcode"></i>&nbsp;&nbsp;Código QR de identificação</p></Link>)
+            } else if (actor === "client-basic") {
+              return (<Link to='/client-basic/qrcode' className='text-decoration-none'><p><i className="fa-solid fa-qrcode"></i>&nbsp;&nbsp;Código QR de identificação</p></Link>)
+            } else if (actor === "client-standard") {
+              return (<Link to='/client-standard/qrcode' className='text-decoration-none'><p><i className="fa-solid fa-qrcode"></i>&nbsp;&nbsp;Código QR de identificação</p></Link>)
+            } else if (actor === "pt") {
+              return (<Link to='/pt/qrcode' className='text-decoration-none'><p><i className="fa-solid fa-qrcode"></i>&nbsp;&nbsp;Código QR de identificação</p></Link>)
+            }
+          })()}
+          {(() => {
+            if (actor === "client") {
               return (<Link to='/client/profile' className='text-decoration-none'><p><i className="fa-solid fa-user"></i>&nbsp;&nbsp;Editar perfil</p></Link>)
             } else if (actor === "client-basic") {
               return (<Link to='/client-basic/profile' className='text-decoration-none'><p><i className="fa-solid fa-user"></i>&nbsp;&nbsp;Editar perfil</p></Link>)

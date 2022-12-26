@@ -27,6 +27,7 @@ import ClientRegister4 from './client/clientRegister4';
 import ClientWaitingForPT from './client/clientWaitingForPT';
 import ClientSubscription from './client/clientSubscription';
 import ClientProfile from './client/clientProfile';
+import ClientQRCode from './client/clientQRCode';
 
 // Client with Standard plan. It is equal to Premium plan, but with no nutrition. "standard" is added to the file path.
 import ClientStandardHome from './client-standard/clientStandardHome';
@@ -48,6 +49,7 @@ import ClientStandardRegister4 from './client-standard/clientStandardRegister4';
 import ClientStandardWaitingForPT from './client-standard/clientStandardWaitingForPT';
 import ClientStandardSubscription from './client-standard/clientStandardSubscription';
 import ClientStandardProfile from './client-standard/clientStandardProfile';
+import ClientStandardQRCode from './client-standard/clientStandardQRCode';
 
 // Client with Basic plan
 import ClientBasicExercise from './client-basic/clientBasicExercise';
@@ -62,6 +64,7 @@ import ClientBasicRegister2 from './client-basic/clientBasicRegister2';
 import ClientBasicRegister3 from './client-basic/clientBasicRegister3';
 import ClientBasicRegister4 from './client-basic/clientBasicRegister4';
 import ClientBasicSubscription from './client-basic/clientBasicSubscription';
+import ClientBasicQRCode from './client-basic/clientBasicQRCode';
 
 // Personal Trainer
 import PTHome from './pt/PTHome';
@@ -80,6 +83,7 @@ import PTUserDetailsMeasures from './pt/PTUserDetailsMeasures';
 import PTUserDetailsNutrition from './pt/PTUserDetailsNutrition';
 import PTUserDetailsChangePlan from './pt/PTUserDetailsChangePlan';
 import PTProfile from './pt/PTProfile';
+import PTQRCode from './pt/PTQRCode';
 
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -128,6 +132,7 @@ root.render(
         <Route path="/client/waiting-for-pt" element={<ClientWaitingForPT />} />
         <Route path="/client/subscription" element={<ClientSubscription />} />
         <Route path="/client/profile" element={<ClientProfile />} />
+        <Route path="/client/qrcode" element={<ClientQRCode />} />
 
         {/* Client with Standard plan */}
         <Route path="/client-standard/home" element={<ClientStandardHome />} />
@@ -149,6 +154,7 @@ root.render(
         <Route path="/client-standard/waiting-for-pt" element={<ClientStandardWaitingForPT />} />
         <Route path="/client-standard/subscription" element={<ClientStandardSubscription />} />
         <Route path="/client-standard/profile" element={<ClientStandardProfile />} />
+        <Route path="/client-standard/qrcode" element={<ClientStandardQRCode />} />
 
         {/* Client with Basic plan */}
         <Route path="/client-basic/home" element={<ClientBasicHome />} />
@@ -163,6 +169,7 @@ root.render(
         <Route path="/client-basic/register/4" element={<ClientBasicRegister4 />} />
         <Route path="/client-basic/subscription" element={<ClientBasicSubscription />} />
         <Route path="/client-basic/profile" element={<ClientBasicProfile />} />
+        <Route path="/client-basic/qrcode" element={<ClientBasicQRCode />} />
 
         {/* Personal Trainer */}
         <Route path="/pt/home" element={<PTHome />} />
@@ -180,7 +187,8 @@ root.render(
         <Route path="/pt/users/details/measures" element={<PTUserDetailsMeasures />} />
         <Route path="/pt/users/details/nutrition" element={<PTUserDetailsNutrition />} />
         <Route path="/pt/users/details/changeplan" element={<PTUserDetailsChangePlan />} />
-        <Route path="/pt/profile" element={<PTProfile />} />        
+        <Route path="/pt/profile" element={<PTProfile />} />
+        <Route path="/pt/qrcode" element={<PTQRCode />} />
       </Routes>
     </Router>
   </React.StrictMode>
