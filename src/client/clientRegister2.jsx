@@ -45,7 +45,7 @@ function ClientRegister2() {
                                         <span className="bold">Standard</span>
                                         <span> (19,99€/mês)</span>
                                     </Col>
-                                    <Col xs="auto"><i className='fa-regular fa-circle-dot dark-gray'></i></Col>
+                                    <Col xs="auto"><i className='fa-regular fa-circle dark-gray'></i></Col>
                                 </Row>
                                 <Card.Text>
                                     Tudo no plano Basic, mais:<br />
@@ -61,7 +61,7 @@ function ClientRegister2() {
                                         <span className="bold">Premium</span>
                                         <span> (24,99€/mês)</span>
                                     </Col>
-                                    <Col xs="auto"><i className='fa-regular fa-circle dark-gray'></i></Col>
+                                    <Col xs="auto"><i className='fa-regular fa-circle-dot dark-gray'></i></Col>
                                 </Row>
                                 <Card.Text>
                                     Tudo no plano Standard, mais:<br />
