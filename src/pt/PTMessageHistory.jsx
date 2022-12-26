@@ -5,10 +5,15 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import PTMale from '../img/pt-male.png';
 import Client from '../img/client.jpeg';
 import Data from '../api/pt/messageHistory.json';
+import React, { useEffect } from 'react';
 
 function PTMessageHistory() {
+    useEffect(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+    });
+
     return (
-        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: 'calc(75px + 16px)' }} className="d-flex align-items-end">
+        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: 'calc(75px + 16px)' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Mensagens</title>
