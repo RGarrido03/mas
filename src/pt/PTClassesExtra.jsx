@@ -18,7 +18,7 @@ function PTExerciseClasses() {
                     return <Card key={index} className="off-white-background mt-3 text-start">
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{value.time}</span> | {value.focus}</Card.Title>
-                            <Card.Text className='fs-7 text-center'>
+                            <Card.Text className='fs-7 text-center' as='div'>
                                 <Row className='text-start'>
                                     <Col xs={6}>
                                         <span className='semibold'>Duração</span> {value.duration} minutos
