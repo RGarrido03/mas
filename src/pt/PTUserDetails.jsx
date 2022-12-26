@@ -59,7 +59,7 @@ function PTUserDetails() {
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
                                 <Card.Title className='bold'>Massa muscular</Card.Title>
-                                <Card.Text><img src={chart} alt="Gráfico om a evolução da massa muscular" /></Card.Text>
+                                <Card.Text>Existiu uma ligeira evolução esta semana.</Card.Text>
                             </Col>
                             <Col xs="auto">
                                 <div className="float-end">

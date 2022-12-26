@@ -35,6 +35,7 @@ import PTRegister from './pt/PTRegister';
 import PTUsers from './pt/PTUsers';
 import PTUsersWaiting from './pt/PTUsersWaiting';
 import PTUserDetails from './pt/PTUserDetails';
+import PTUserDetailsMeasures from './pt/PTUserDetailsMeasures';
 import PTUserDetailsNutrition from './pt/PTUserDetailsNutrition';
 import PTUserDetailsChangePlan from './pt/PTUserDetailsChangePlan';
 import NotFound from './notFound';
@@ -96,6 +97,7 @@ root.render(
         <Route path="/pt/users" element={<PTUsers />} />
         <Route path="/pt/users/waiting" element={<PTUsersWaiting />} />
         <Route path="/pt/users/details" element={<PTUserDetails />} />
+        <Route path="/pt/users/details/measures" element={<PTUserDetailsMeasures />} />
         <Route path="/pt/users/details/nutrition" element={<PTUserDetailsNutrition />} />
         <Route path="/pt/users/details/changeplan" element={<PTUserDetailsChangePlan />} />
         <Route path="*" element={<NotFound />} />
