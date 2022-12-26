@@ -2,8 +2,8 @@ import Navbar from '../navbar/navbarBackMessage';
 import { Container, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import chart from '../img/chart.svg';
 import Data from '../api/pt/userExercise.json';
+import Data_nutrition from '../api/pt/userNutrition_daily.json';
 
 function PTUserDetails() {
     return (
@@ -41,8 +41,8 @@ function PTUserDetails() {
                     <Card className="hover off-white-background mt-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
-                                <Card.Title className='bold'>Almoço (320kcal)</Card.Title>
-                                <Card.Text>Bife de frango com um bróculo e meia batata cozida</Card.Text>
+                                <Card.Title className='bold'>{Data_nutrition.actual.type} ({Data_nutrition.actual.calories}kcal)</Card.Title>
+                                <Card.Text>{Data_nutrition.actual.name}</Card.Text>
                             </Col>
                             <Col xs="auto">
                                 <div className="float-end">
