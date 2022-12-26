@@ -105,7 +105,7 @@ Contains the source code for the app.
 - The `css` folder contains stylesheets featuring color, fonts and animations.
 - The `img` folder contains images required by the app.
 - The `modal`, `footer` and `navbar` folders contain the code for the modal, footer and navbar components, respectively.
-- The `client` folder contains the code for the Client pages.
+- The `client*` folders contain the code for the Client pages. The `*` is the Client's plan, where `null` means "Premium".
 - The `pt` folder contains the code for the Personal Trainer pages.
 
 Every jsx file in the `client` and `pt` folders is a page, and its filename is based on the path. For example, the `client/ClientExercise.jsx` file is the Client Exercise page, and its path is `/client/exercise`.

@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ActorChoosing from './actorChoosing';
+import NotFound from './notFound';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
+// Client with Premium plan
 import ClientHome from './client/clientHome';
 import ClientExercise from './client/clientExercise';
 import ClientExerciseClasses from './client/clientExerciseClasses';
@@ -23,6 +27,8 @@ import ClientRegister4 from './client/clientRegister4';
 import ClientWaitingForPT from './client/clientWaitingForPT';
 import ClientSubscription from './client/clientSubscription';
 import ClientProfile from './client/clientProfile';
+
+// Personal Trainer
 import PTHome from './pt/PTHome';
 import PTLogin from './pt/PTLogin';
 import PTClasses from './pt/PTClasses';
@@ -39,8 +45,6 @@ import PTUserDetailsMeasures from './pt/PTUserDetailsMeasures';
 import PTUserDetailsNutrition from './pt/PTUserDetailsNutrition';
 import PTUserDetailsChangePlan from './pt/PTUserDetailsChangePlan';
 import PTProfile from './pt/PTProfile';
-import NotFound from './notFound';
-import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -65,6 +69,9 @@ root.render(
     <Router basename={process.env.REACT_APP_BASENAME}>
       <Routes>
         <Route path="/" element={<ActorChoosing />} />
+        <Route path="*" element={<NotFound />} />
+
+        {/* Client with Premium plan */}
         <Route path="/client/home" element={<ClientHome />} />
         <Route path="/client/exercise" element={<ClientExercise />} />
         <Route path="/client/exercise/extraclasses" element={<ClientExerciseClasses />} />
@@ -86,6 +93,8 @@ root.render(
         <Route path="/client/waiting-for-pt" element={<ClientWaitingForPT />} />
         <Route path="/client/subscription" element={<ClientSubscription />} />
         <Route path="/client/profile" element={<ClientProfile />} />
+
+        {/* Personal Trainer */}
         <Route path="/pt/home" element={<PTHome />} />
         <Route path="/pt/classes" element={<PTClasses />} />
         <Route path="/pt/classes/extraclasses" element={<PTClassesExtra />} />
@@ -101,8 +110,7 @@ root.render(
         <Route path="/pt/users/details/measures" element={<PTUserDetailsMeasures />} />
         <Route path="/pt/users/details/nutrition" element={<PTUserDetailsNutrition />} />
         <Route path="/pt/users/details/changeplan" element={<PTUserDetailsChangePlan />} />
-        <Route path="/pt/profile" element={<PTProfile />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/pt/profile" element={<PTProfile />} />        
       </Routes>
     </Router>
   </React.StrictMode>
