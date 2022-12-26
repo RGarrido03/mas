@@ -17,7 +17,7 @@ function PTUserDetails() {
             <Container fluid className="mt-3">
                 {/* Exercise insight */}
                 <Link to="/pt/users/details/changeplan" className='text-decoration-none'>
-                    <Card className="off-white-background mt-3">
+                    <Card className="hover off-white-background mt-3">
                         <Card.Body>
                             <Row>
                                 <Col>
