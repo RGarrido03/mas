@@ -8,10 +8,10 @@ function ClientNutritionChangePlan() {
         <div style={{ minHeight: 'calc(100vh - 58px)', paddingTop: '58px', paddingBottom: '16px' }}>
             <HelmetProvider>
                 <Helmet>
-                    <title>Ver plano semanal</title>
+                    <title>Ver plano de nutrição semanal</title>
                 </Helmet>
             </HelmetProvider>
-            <Navbar text="Ver plano semanal" />
+            <Navbar text="Ver plano de nutrição semanal" />
             <Container fluid>
                 {Data["done"].map((value, index) => {
                     return <Card className="off-white-background mt-3" key={index + 1}>
@@ -50,7 +50,7 @@ function ClientNutritionChangePlan() {
                             <Row>
                                 <Col></Col>
                                 <Col xs="auto">
-                                    <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-regular fa-pen-to-square white' />&nbsp;&nbsp;Propor alteração</Button>
+                                    <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-pen-to-square white' />&nbsp;&nbsp;Propor alteração</Button>
                                 </Col>
                                 <Col></Col>
                             </Row>
@@ -76,7 +76,7 @@ function ClientNutritionChangePlan() {
                                 <Row>
                                     <Col></Col>
                                     <Col xs="auto">
-                                        <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-regular fa-pen-to-square white' />&nbsp;&nbsp;Propor alteração</Button>
+                                        <Button type="button" className="btn primary-blue-background white mt-3"><i className='fa-solid fa-pen-to-square white' />&nbsp;&nbsp;Propor alteração</Button>
                                     </Col>
                                     <Col></Col>
                                 </Row>

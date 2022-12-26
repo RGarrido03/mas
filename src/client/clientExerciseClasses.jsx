@@ -15,7 +15,7 @@ function ClientExerciseClasses() {
             <Navbar text="Participar em aulas extra" />
             <Container fluid>
                 {Data.map((value) => {
-                    return <Card className="hover off-white-background mt-3" key={value.name}>
+                    return <Card className="off-white-background mt-3" key={value.name}>
                         <Card.Body>
                             <Card.Title className='mb-2 semibold fs-6'><span className='bold'>{value.time}</span> | {value.focus}</Card.Title>
                             <Card.Text className='fs-7 text-center'>
