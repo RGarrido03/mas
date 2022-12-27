@@ -90,7 +90,7 @@ function ClientNutrition() {
                     <Card className="hover off-white-background mt-3">
                         <Card.Body className="row d-flex align-items-center">
                             <Col>
-                                <Card.Text><span className="semibold">Ver e editar</span> o plano semanal</Card.Text>
+                                <Card.Text><span className="semibold">Ver e sugerir alterações</span> ao plano semanal</Card.Text>
                             </Col>
                             <Col xs="auto">
                                 <i className="fa-regular fa-chevron-right"></i>
