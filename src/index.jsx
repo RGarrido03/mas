@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ActorChoosing from './actorChoosing';
 import NotFound from './notFound';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
+import About from './about';
 
 // Client with Premium plan
 import ClientHome from './client/clientHome';
@@ -109,6 +110,7 @@ root.render(
       <Routes>
         <Route path="/" element={<ActorChoosing />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/about" element={<About />} />
 
         {/* Client with Premium plan */}
         <Route path="/client/home" element={<ClientHome />} />
