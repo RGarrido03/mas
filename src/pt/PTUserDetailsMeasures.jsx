@@ -6,7 +6,7 @@ import Data from '../api/pt/userMeasures.json';
 
 function PTUserDetailsMeasures() {
     return (
-        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: 'calc(57px + 16px)' }}>
+        <div style={{ marginTop: 'calc(58px + 16px)', marginBottom: '16px' }}>
             <HelmetProvider>
                 <Helmet>
                     <title>Medidas corporais</title>
