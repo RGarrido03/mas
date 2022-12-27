@@ -22,7 +22,7 @@ function ActorChoosing() {
                     <h2 className="mb-5">à nova app Fitness Hut</h2>
                 </div>
                 <div className="vstack gap-3 col-9 mx-auto">
-                    <p className="mb-0">Escolha uma das seguintes opções:</p>
+                    <p className="mb-0">Escolhe uma das seguintes opções:</p>
                     <Link to="/client/login" className="btn primary-blue-background white">Cliente Premium</Link>
                     <Link to="/client-standard/login" className="btn primary-blue-background white">Cliente Standard</Link>
                     <Link to="/client-basic/login" className="btn primary-blue-background white">Cliente Basic</Link>
