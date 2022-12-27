@@ -60,9 +60,6 @@ const ModalGeneric = (props) => {
               return (<Link to='/client-standard/subscription' className='text-decoration-none'><p><i className="fa-solid fa-credit-card"></i>&nbsp;&nbsp;Gerir subscrição</p></Link>)
             }
           })()}
-          <Link to="/settings" className='text-decoration-none'>
-            <p><i className="fa-solid fa-gear"></i>&nbsp;&nbsp;Definições</p>
-          </Link>
           <Link to="/about" className='text-decoration-none'>
             <p className="clickable mb-0"><i className="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Acerca da app</p>
           </Link>
