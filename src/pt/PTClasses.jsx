@@ -18,7 +18,7 @@ function PTExercise() {
                 {/* Daily plan */}
                 <Card className="off-white-background mt-3">
                     <Card.Body>
-                        <Card.Title className='bold'>Plano semanal</Card.Title>
+                        <Card.Title className='bold'>Plano diário</Card.Title>
                         <Card.Text as="div">
                             {Data["done"].map((value, index) => { return <p key={index} className='mt-3 mb-0'><span className="fw-semibold text-success">{value.time}</span>&nbsp; {value.focus}</p> })}
                             <Row className="d-flex align-items-end">
