@@ -91,56 +91,10 @@
                     "name": "Filete de pescada com arroz"
                 }
             ]
-        },
-        {
-            "weekday": "Quarta-feira",
-            "calories": 2000,
-            "meals": [
-                {
-                    "type": "Pequeno-almoço",
-                    "icon": "house-day",
-                    "calories": 300,
-                    "protein": 15,
-                    "fat": 4,
-                    "name": "Flocos de aveia e banana"
-                },
-                {
-                    "type": "Lanche da manhã",
-                    "icon": "mug-saucer",
-                    "calories": 200,
-                    "protein": 10,
-                    "fat": 3,
-                    "name": "Barra de cereais"
-                },
-                {
-                    "type": "Almoço",
-                    "icon": "fork-knife",
-                    "calories": 700,
-                    "protein": 30,
-                    "fat": 2,
-                    "name": "Bife de frango com bróculos"
-                },
-                {
-                    "type": "Lanche da tarde",
-                    "icon": "apple-whole",
-                    "calories": 100,
-                    "protein": 0.5,
-                    "fat": 0.5,
-                    "name": "Fruta"
-                },
-                {
-                    "type": "Jantar",
-                    "icon": "fork-knife",
-                    "calories": 700,
-                    "protein": 5,
-                    "fat": 8,
-                    "name": "Filete de pescada com arroz"
-                }
-            ]
         }
     ],
     "actual": {
-        "weekday": "Quinta-feira",
+        "weekday": "Quarta-feira",
         "calories": 2000,
         "meals": [
             {
@@ -186,6 +140,52 @@
         ]
     },
     "next": [
+        {
+            "weekday": "Quinta-feira",
+            "calories": 2000,
+            "meals": [
+                {
+                    "type": "Pequeno-almoço",
+                    "icon": "house-day",
+                    "calories": 300,
+                    "protein": 15,
+                    "fat": 4,
+                    "name": "Flocos de aveia e banana"
+                },
+                {
+                    "type": "Lanche da manhã",
+                    "icon": "mug-saucer",
+                    "calories": 200,
+                    "protein": 10,
+                    "fat": 3,
+                    "name": "Barra de cereais"
+                },
+                {
+                    "type": "Almoço",
+                    "icon": "fork-knife",
+                    "calories": 700,
+                    "protein": 30,
+                    "fat": 2,
+                    "name": "Bife de frango com bróculos"
+                },
+                {
+                    "type": "Lanche da tarde",
+                    "icon": "apple-whole",
+                    "calories": 100,
+                    "protein": 0.5,
+                    "fat": 0.5,
+                    "name": "Fruta"
+                },
+                {
+                    "type": "Jantar",
+                    "icon": "fork-knife",
+                    "calories": 700,
+                    "protein": 5,
+                    "fat": 8,
+                    "name": "Filete de pescada com arroz"
+                }
+            ]
+        },
         {
             "weekday": "Sexta-feira",
             "calories": 2000,
