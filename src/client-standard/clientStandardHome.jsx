@@ -54,23 +54,6 @@ function ClientStandardHome() {
                     </Card>
                 </Link>
 
-                {/* Nutrition insight */}
-                <Link to="/client-standard/nutrition" className='text-decoration-none'>
-                    <Card className="hover off-white-background mb-3">
-                        <Card.Body className="row d-flex align-items-center">
-                            <Col>
-                                <Card.Title className='bold'>Almoço (320kcal)</Card.Title>
-                                <Card.Text>Bife de frango com um bróculo e meia batata cozida</Card.Text>
-                            </Col>
-                            <Col xs="auto">
-                                <div className="float-end">
-                                    <i className="fa-solid fa-pot-food dark-gray"></i>
-                                </div>
-                            </Col>
-                        </Card.Body>
-                    </Card>
-                </Link>
-
                 {/* Measures insight */}
                 <Link to="/client-standard/measures" className='text-decoration-none'>
                     <Card className="hover off-white-background mb-3">
