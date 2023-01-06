@@ -13,6 +13,8 @@ Run the app with `npm start`. Node.js will automatically open [http://localhost:
 You may also see any lint errors in the console.
 
 ## Deployment
+<b>TL;DR: The app is automatically deployed using GitHub Actions.</b>
+
 The app is deployed on GitHub Pages. To manually deploy the app, run `npm run deploy` - this will build the app for production to the `build` folder, and then push the build files to the `gh-pages` branch.
 
 GitHub Actions is configured in this repo so that the deployed app is updated, every time there's a push or a Pull Request.
