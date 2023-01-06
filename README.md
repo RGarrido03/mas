@@ -6,7 +6,7 @@ Check the live page at https://rgarrido03.github.io/mas.
 ## Development
 This is a [React](https://reactjs.org/) app, created with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html).
 
-First, install the Current version of [Node.js](https://nodejs.org/en/) on your computer. Then, open the console inside the project folder, and install the project dependencies by running `npm install`.
+First, install the Current version of [Node.js](https://nodejs.org/en/) on your computer. Then, open the console inside the project folder (be sure to call it `mas`), and install the project dependencies by running `npm install`.
 
 Run the app with `npm start`. Node.js will automatically open [http://localhost:3000](http://localhost:3000) on your default browser, and the page will reload when you make changes.
 
