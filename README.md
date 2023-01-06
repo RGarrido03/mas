@@ -81,6 +81,9 @@ index f6d72d5..cca1146 100644
 
 ```
 
+## Testing
+The app has Selenium tests, which are located in the `selenium_tests` folder. To run them, you need to have both Java and Selenium IDE installed on your computer. Then, open the Selenium IDE browser extension, and import the `MAS.side` file as a project. Finally, run the tests as you wish.
+
 ## File & folder structure
 `package.json`\
 Contains the project's dependencies and scripts.
@@ -96,6 +99,9 @@ Environment variables file. It contains the `REACT_APP_BASENAME` variable, which
 
 `public`\
 Contains the `index.html` file, which is base HTML for every page. It also has the app logos and manifest.
+
+`selenium_tests`\
+Contains the Selenium tests for the app. Check the [Testing section](#Testing) for more info.
 
 `src`\
 Contains the source code for the app.
